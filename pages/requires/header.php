@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
                 <ul id="menu-mine-menu" class="nav navbar-nav navbar-left menu"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7">
                     <li class="active"><a href="index.php">خانه</a></li>
-                    <li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="index.php?page=belog">بلاگ</a></li>
+                    <li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="index.php?page=blog">بلاگ</a></li>
                     <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="index.php?page=gallery">گالری تصاویر</a></li>
                     <li id="menu-item-95" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">زیر منو <span class="caret"></span></a>

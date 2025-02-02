@@ -86,6 +86,6 @@
     <?php
 	}
 	else{
-		require dirname(__FILE__).'/404error.php';
+		require CUSTOM_PAGE_PATH.'404error.php';
 	}
 ?>
