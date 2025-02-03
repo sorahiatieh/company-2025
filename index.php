@@ -1,4 +1,5 @@
 <?php
+    define("_AST",1);
     require "include/inc.php";
    
 ?>
@@ -37,7 +38,7 @@
                 if(file_exists($filename)){
                     require $filename;
                 }else
-                    require CUSTOM_PAGE_PATH."404error.php";
+                    require CUSTOM_PAGE_PATH."404.php";
             }
             else
                 require "pages/main.php";

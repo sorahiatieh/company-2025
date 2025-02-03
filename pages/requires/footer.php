@@ -1,3 +1,6 @@
+<?php
+	defined("_AST") or die("Access denied");
+?>
 <div class="footer-top">
 	<div class="container">
 		<div class="row">

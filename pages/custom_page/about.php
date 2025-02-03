@@ -1,3 +1,6 @@
+<?php
+	defined("_AST") or die("Access denied");
+?>
 <div class="container cont-us">
     <div class="row">
        <div class="col-lg-12">

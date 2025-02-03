@@ -1,4 +1,6 @@
 <?php
+	defined("_AST") or die("Access denied");
+
 	if(isset($_GET['id'])){
 	$id=$_GET['id'];
 ?>
@@ -11,7 +13,7 @@
                             <a href="index.php">خانه</a>
                         </li>
                         <li>
-                            <a href="404error.php">لوگو</a>
+                            <a href="404.php">لوگو</a>
                         </li>
                         <li class="active">نمونه کار هشتم</li>
                         
@@ -86,6 +88,6 @@
     <?php
 	}
 	else{
-		require CUSTOM_PAGE_PATH.'404error.php';
+		require CUSTOM_PAGE_PATH.'404.php';
 	}
 ?>

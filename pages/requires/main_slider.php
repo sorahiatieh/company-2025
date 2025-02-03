@@ -1,4 +1,12 @@
+<?php
+    defined("_AST") or die("Access denied");
+  $sliser=new Slider();
+  $items=$sliser->getList();
+?>
 <div class="slider">
+	<?php
+		foreach($items as $item){
+	?>
     <div id="main_slider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -10,36 +18,25 @@
         </ol>
 
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="assets/img/slider/slider-1.jpg" alt="">
-            </div>
-
+            
             <div class="item">
-                <img src="assets/img/slider/slider-2.jpg" alt="">
+                <img src="assets/img/slider/slider-<?= $item['id']; ?>.jpg" alt="<?= $item['title']; ?>">
             </div>
-
-            <div class="item">
-                <img src="assets/img/slider/slider-3.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="assets/img/slider/slider-4.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="assets/img/slider/slider-5.jpg" alt="">
-            </div>
-
+	                
+            <?php
+                }
+            ?>
             <a class="left carousel-control" href="#main_slider" role="button" data-slide="prev">
-                            <span class="icon-prev">
-                                <span class="fi fi-left-circled" aria-hidden="true"></span>
-                            </span>
+                <span class="icon-prev">
+                    <span class="fi fi-left-circled" aria-hidden="true"></span>
+                </span>
             </a>
             <a class="right carousel-control" href="#main_slider" role="button" data-slide="next">
-                            <span class="icon-next">
-                                <span class="fi fi-right-circled" aria-hidden="true"></span>
-                            </span>
+                <span class="icon-next">
+                    <span class="fi fi-right-circled" aria-hidden="true"></span>
+                </span>
             </a>
+	           
         </div>
     </div>
 </div>

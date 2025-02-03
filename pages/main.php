@@ -1,3 +1,6 @@
+<?php
+    require REQUIRE_PATH."main_slider.php";
+    ?>
 <div class="row">
     <div class="col-lg-12">
         <h2 class="titr">خدمات شرکت</h2>

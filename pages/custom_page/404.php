@@ -1,3 +1,6 @@
+<?php
+	defined("_AST") or die("Access denied");
+?>
 <div class="cont-error">
   <div class="matn">
       <h1>404</h1>

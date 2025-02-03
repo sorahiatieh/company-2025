@@ -1,3 +1,6 @@
+<?php
+	defined("_AST") or die("Access denied");
+    ?>
 <div class="top-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
