@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/css/nivo-slider.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/font-icon.css">
@@ -42,7 +43,7 @@
                     require CUSTOM_PAGE_PATH."404.php";
             }
             else
-                require "pages/main.php";
+                require CUSTOM_PAGE_PATH."main.php";
         ?>
     </div>
     <!-- فوووووووتر-->

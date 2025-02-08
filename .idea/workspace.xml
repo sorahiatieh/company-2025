@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f6bc3f-3a34-4bca-99f8-bc678abe0a6d" name="Changes" comment="">
+    <list default="true" id="edd0bf85-5bf8-465d-994a-162022c154dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/company-2025.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/db/Slider.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/requires/main_slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/requires/main_slider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +27,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php7.4.33\php.exe" />
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2sXQ74l6zAjLDKwQ4eSYSJyZNZk" />
+  <component name="ProjectId" id="2skbKp4qZteoIiqa5x34Oq3LCER" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,8 +45,12 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -58,12 +64,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6f6bc3f-3a34-4bca-99f8-bc678abe0a6d" name="Changes" comment="" />
-      <created>1738599268658</created>
+      <changelist id="edd0bf85-5bf8-465d-994a-162022c154dd" name="Changes" comment="" />
+      <created>1739002458318</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738599268658</updated>
-      <workItem from="1738599269688" duration="604000" />
+      <updated>1739002458318</updated>
+      <workItem from="1739002459462" duration="472000" />
     </task>
     <servers />
   </component>
