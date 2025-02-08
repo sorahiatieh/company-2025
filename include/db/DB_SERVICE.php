@@ -1,5 +1,8 @@
 <?php
 	class DB_SERVICE{
+		/**
+		 * @return array
+		 */
 		function getList(){
 			global $mysqli;
 			$q="select * from tbl_services where `enable`=1";
