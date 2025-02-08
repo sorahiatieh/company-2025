@@ -1,13 +1,15 @@
 <?php
     define("_AST",1);
     require "include/inc.php";
-   
+   $setting=new DB_SETTING();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>کمپانی |شرکت تجاری من</title>
+    <title><?= $setting->getSetting('site_title'); ?></title>
+    <meta name="keywords" content="<?= $setting->getSetting('site_keywords'); ?>">
+    <meta name="description" content="<?= $setting->getSetting('site_description'); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">

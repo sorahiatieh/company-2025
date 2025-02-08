@@ -62,26 +62,17 @@
                <div class="col-lg-12">
                    <h3 class="titr">پروژه های مرتبط </h3>
                </div>
+               <?php
+                   for($i=0; $i<4; $i++){
+               ?>
                <div class="col-sm-3 col-xs-6 item">
                    <a href="seven-index.php">
-                       <img src="assets/img/portfolio-6.jpg" alt="">
+                       <img src="assets/img/portfolio/1.jpg" alt="">
                    </a>
                </div>
-               <div class="col-sm-3 col-xs-6 item">
-                   <a href="six-index.php">
-                       <img src="assets/img/6.jpg" alt="">
-                   </a>
-               </div>
-               <div class="col-sm-3 col-xs-6 item">
-                   <a href="five-index.php">
-                       <img src="assets/img/5.jpg" alt="">
-                   </a>
-               </div>
-               <div class="col-sm-3 col-xs-6 item">
-                   <a href="four-index.php">
-                       <img src="assets/img/4.jpg" alt="">
-                   </a>
-               </div>
+               <?php
+                }
+               ?>
            </div>
         </div>
 		

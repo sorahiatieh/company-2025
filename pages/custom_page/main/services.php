@@ -1,10 +1,12 @@
 <?php
   $service=new DB_SERVICE();
+  $setting=new DB_SETTING();
+  
   $items=$service->getList();
 ?>
 <div class="row">
 	<div class="col-md-12">
-		<h2 class="titr">خدمات شرکت</h2>
+		<h2 class="titr"><?= $setting->getSetting('service_title'); ?></h2>
 	</div>
     <?php
         foreach($items as $item){

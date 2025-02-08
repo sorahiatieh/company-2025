@@ -1,25 +1,22 @@
+<?php
+    $portfolio=new DB_PORTFOLIO();
+    $setting=new DB_SETTING();
+    
+    $items=$portfolio->getList(4);
+?>
 <div class="row">
 	<div class="col-lg-12">
-		<h2 class="titr">آخرین نمونه کارها</h2>
+		<h2 class="titr"><?= $setting->getSetting('portfolio_title'); ?></h2>
 	</div>
+    <?php
+        foreach($items as $item){
+    ?>
 	<div class="item col-md-3 col-sm-6 col-xs-6">
-		<a href="eight-index.html">
-			<img src="assets/img/8.jpg" alt="نمونه کار هشتم">
+		<a href="index.php?page=show_portfolio&id=<?= $item['id']; ?>">
+			<img src="assets/img/portfolio/<?= $item['id']; ?>.jpg" class="img-responsive img-thumbnail" alt="<?= $item['title']; ?>">
 		</a>
 	</div>
-	<div class="item col-md-3 col-sm-6 col-xs-6">
-		<a href="seven-index.html">
-			<img src="assets/img/7.jpg" alt="نمونه کار هفتم">
-		</a>
-	</div>
-	<div class="item col-md-3 col-sm-6 col-xs-6">
-		<a href="six-index.html">
-			<img src="assets/img/6.jpg" alt="نمونه کار ششم">
-		</a>
-	</div>
-	<div class="item col-md-3 col-sm-6 col-xs-6">
-		<a href="five-index.html">
-			<img src="assets/img/5.jpg" alt="نمونه کار پنجم" class="img-responsive">
-		</a>
-	</div>
+    <?php
+        }
+    ?>
 </div>
