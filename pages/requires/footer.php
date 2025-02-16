@@ -1,44 +1,26 @@
 <?php
 	defined("_AST") or die("Access denied");
+    $setting=new DB_SETTING();
+    $socialNetwork=json_decode($setting->getSetting("social_network"),true);
+    
+    foreach($socialNetwork as $item){}
 ?>
 <div class="footer-top">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-sm-4 col-xs-12">
 				<ul class="list-inline social-list">
-					<li>
-						<a href="#">
-							<i class="fi fi-facebook-squared f-icon"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fi fi-linkedin-squared f-icon"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fi fi-twitter-squared f-icon"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fi fi-gplus-squared f-icon"></i>
-						</a>
-					</li>
+					<li><a href="#" target="_blank"><i class="fi fi-facebook-squared f-icon"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fi fi-linkedin-squared f-icon"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fi fi-twitter-squared f-icon"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fi fi-gplus-squared f-icon"></i></a></li>
 				</ul>
 			</div>
 			<div class="col-lg-4 col-sm-4 col-xs-12">
-				<h3>
-					<i class="fi fi-phone-squared"></i>
-					041-35574907
-				</h3>
+				<h3><i class="fi fi-phone-squared"></i>041-35574907</h3>
 			</div>
 			<div class="col-lg-4 col-sm-4 col-xs-12">
-				<h3>
-					<i class="fi fi-question"></i>
-					سوالات متداول
-				</h3>
+				<h3><i class="fi fi-question"></i>سوالات متداول</h3>
 			</div>
 		</div>
 	</div>
