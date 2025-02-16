@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/json_encode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/company-2025.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089/storage_v2/_src_/schema/company-2025.UaBdUg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60428f46-0b2d-41c7-8ca1-6caa91f16089/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/custom_page/main/why_choice.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/custom_page/main/why_choice.php" afterDir="false" />
-    </list>
+    <list default="true" id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739688025070</updated>
-      <workItem from="1739688026135" duration="5132000" />
+      <workItem from="1739688026135" duration="9344000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 <?php
   $setting=new DB_SETTING();
-  $sloganDetails=json_decode($setting->getSetting("slogan"),true);
+  $sloganDetails=json_decode($setting->getSetting("main_slogan"),true);
 ?>
 <div class="well">
 	<div class="row">
