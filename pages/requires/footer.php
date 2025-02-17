@@ -2,6 +2,10 @@
 	defined("_AST") or die("Access denied");
     $setting=new DB_SETTING();
     $socialNetwork=json_decode($setting->getSetting("social_network"),true);
+    $mainFooter=json_decode($setting->getSetting("main_footer"),true);
+    $mainAddress=json_decode($setting->getSetting("main_address"),true);
+    $mainCopyright=json_decode($setting->getSetting("main_copyright"),true);
+    
 ?>
 <div class="footer-top">
 	<div class="container">
@@ -17,12 +21,18 @@
                     ?>
 				</ul>
 			</div>
+			<?php
+				foreach($mainFooter as $key=>$value){
+            ?>
 			<div class="col-lg-4 col-sm-4 col-xs-12">
-				<h3><i class="fi fi-phone-squared"></i>041-35574907</h3>
+				<h3><i class="fi <?= $value['IconPhone'] ; ?>"></i><?= $value['Phone'] ; ?></h3>
 			</div>
 			<div class="col-lg-4 col-sm-4 col-xs-12">
-				<h3><i class="fi fi-question"></i>سوالات متداول</h3>
+				<h3><i class="fi <?= $value['IconQuestion'] ; ?>"></i><?= $value['QuestionText'] ; ?></h3>
 			</div>
+			<?php
+				}
+			?>
 		</div>
 	</div>
 </div>
@@ -61,17 +71,23 @@
 			</div>
 			<div class="footer-col col-md-4">
 				<div class="footer-widget">
+					<?php
+						foreach($mainAddress as $key=>$value){
+                    ?>
 					<div class="footer-title">
-						<h3>اطلاعات تماس</h3>
+						<h3><?= $value['Title']; ?></h3>
 					</div>
-					<p>آدرس : آذربایجان شرقی - تبریز - آبـرسان ، خیابان پاستـور جدید ، تقاطـع ۱۳ آبـان ، پلاک ۹۵ طبـقه دوم</p>
-					<p><i class="fi fi-phone-1"></i>
-						041-33356089</p>
+					<p><?= $value['Address']; ?></p>
+					<p><i class="fi <?= $value['IconPhone']; ?>"></i>
+						<?= $value['Address']; ?></p>
 					<p>
-						<i class="fi fi-mail"></i>
-						<a href="mailto:lemontheme.com@gmail.com">lemontheme.com@gmail.com</a>
-						<img src="assets/img/company-logo-black.png" alt="">
+						<i class="fi <?= $value['IconEmail']; ?>"></i>
+						<a href="<?= $value['Email']; ?>"><?= $value['Email']; ?></a>
+						<img src="<?= $value['ImageURL']; ?>" alt="<?= $value['Title']; ?>">
 					</p>
+                    <?php
+	                    }
+                    ?>
 				</div>
 			</div>
 		</div>
@@ -80,12 +96,18 @@
 <div class="footer-down">
 	<div class="container">
 		<div class="row">
-			<div class="copyright col-lg-6 col-sm-6 text-right">تمامی حقوق سایت اعم از قالب و محتوا برای وبیم محفوظ می باشد ©</div>
+            <?php
+	            foreach($mainCopyright as $key=>$value){
+            ?>
+			<div class="copyright col-lg-6 col-sm-6 text-right"><?= $value['Title'] ; ?> ©</div>
 			<div class="lemontheme col-lg-6 col-sm-6 text-left">
-				<a href="http://lemontheme.com/" target="_blank">
-					<img src="assets/img/lemontheme.png" alt="lemontheme" title="lemontheme">
+				<a href="<?= $value['URL'] ; ?>" target="_blank">
+					<img src="<?= $value['ImageUrl'] ; ?>" alt="lemontheme" title="lemontheme">
 				</a>
 			</div>
+            <?php
+	            }
+            ?>
 		</div>
 	</div>
 </div>
