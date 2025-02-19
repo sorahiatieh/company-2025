@@ -36,13 +36,25 @@
     <div class="container content">
         <?php
             if(isset($_GET['page'])){
-                $page = $_GET['page'];
+                $pagename = $_GET['page'];
                 
-                $filename=CUSTOM_PAGE_PATH.$page.".php";
-                if(file_exists($filename)){
-                    require $filename;
+                $page_db=new DB_PAGE();
+                
+                if($page_db->isPage($pagename)){
+                    $pageDetails=$page_db->getPageDetails($pagename);
+                    
+                    if($pageDetails['custom_page']==1){
+	                    $filename=CUSTOM_PAGE_PATH.$pagename.".php";
+	                    if(file_exists($filename)){
+		                    require $filename;
+	                    }else
+		                    require CUSTOM_PAGE_PATH."404.php";
+                    }else{
+                        require PAGE_PATH."public_page.php";
+                    }
+	                
                 }else
-                    require CUSTOM_PAGE_PATH."404.php";
+	                require CUSTOM_PAGE_PATH."404.php";
             }
             else
                 require CUSTOM_PAGE_PATH."main.php";
