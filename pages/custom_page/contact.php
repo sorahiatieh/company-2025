@@ -20,16 +20,7 @@
              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fa"></script><script src="http://kharido.ir/OtherPage/GoogleMapsInYourSite.js.aspx?idObjectMap=69648" type="text/javascript"></script>  <div id="map_canvas" style="width:500px; height:500px; "> <a href="http://kharido.ir">آگهی دادن</a> </div>
          </div>
          <div class="col-md-4">
-             <h3>اطلاعات تماس</h3>
-             <p>آذربایجان شرقی - تبریز - آبـرسان ، خیابان پاستـور جدید ، تقاطـع ۱۳ آبـان ، پلاک ۹۵ طبـقه دوم </p>
-             <p><i class="fi fi-phone-1"></i>۰۴۱-۳۳۳۵۶۰۸۹</p>
-             <p><i class="fi fi-mail"></i><a href="mailto:lemontheme.com@gmail.com">lemontheme.com@gmail.com</a></p>
-             <ul class="list-inline social-list">
-                 <li><a href="#"><i class="fi fi-facebook-squared"></i></a></li>
-                 <li><a href="#"><i class="fi fi-linkedin-squared"></i></a></li>
-                 <li><a href="#"><i class="fi fi-twitter-squared"></i></a></li>
-                 <li><a href="#"><i class="fi fi-gplus-squared"></i></a></li>
-             </ul>
+             <?= $pageDetails['text']; ?>
          </div>
      </div>
      <div class="row">

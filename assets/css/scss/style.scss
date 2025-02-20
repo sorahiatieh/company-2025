@@ -405,6 +405,12 @@ footer{
             padding-bottom: 15px;
         }
     }
+
+    .b-content{
+        .item{
+            border-bottom: 1px solid var(--color-border);
+        }
+    }
 }
 //***************************************************
 .cont-us{

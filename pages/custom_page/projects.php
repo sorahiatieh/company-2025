@@ -17,10 +17,10 @@
      <div class="row">
          <div class=" row">
              <?php
-                 for($i=0;$i<8;$i++){
+                 for($i=1;$i<10;$i++){
              ?>
              <div class="items col-md-4">
-                 <a href="index.php?page=project_details&id=<?= $i; ?>"><img src="assets/img/8.jpg" alt=""></a>
+                 <a href="index.php?page=project_details&id=<?= $i; ?>"><img src="assets/img/portfolio/<?= $i; ?>.jpg" alt=""></a>
                  <h4><a href="#">نمونه کار هشتم</a></h4>
                  <p></p>
                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>

@@ -48,7 +48,7 @@
 	                    if(file_exists($filename)){
 		                    require $filename;
 	                    }else
-		                    require CUSTOM_PAGE_PATH."404.php";
+		                    require PAGE_PATH."public_page.php";
                     }else{
                         require PAGE_PATH."public_page.php";
                     }
