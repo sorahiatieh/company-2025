@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= $setting->getSetting('site_title'); ?></title>
+    <title><?php require PAGE_PATH.'site_title.php'; ?></title>
     <meta name="keywords" content="<?= $setting->getSetting('site_keywords'); ?>">
     <meta name="description" content="<?= $setting->getSetting('site_description'); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
