@@ -22,4 +22,30 @@
 			
 			return $output;
 		}
+		
+		function isPortfolio($id){
+			global $mysqli;
+			
+			$q="SELECT EXISTS(SELECT 1 FROM tbl_portfolioes WHERE `id`='$id')";
+			
+			$result=$mysqli->query($q) or die($mysqli->error);
+			$row=$result->fetch_row();
+			
+			return (bool) $row[0];
+		}
+		
+		/**
+		 * @param $id
+		 * @return array|false|void|null
+		 */
+		function getPortfolioDetails($id){
+			global $mysqli;
+			$q="select * from tbl_portfolioes where `id`='$id'";
+			$result=$mysqli->query($q) or die($mysqli->error);
+			$field=$result->fetch_assoc();
+			
+			$result->free_result();
+			
+			return $field;
+		}
 	}

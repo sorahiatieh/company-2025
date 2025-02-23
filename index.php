@@ -36,13 +36,12 @@
     <div class="container content">
         <?php
             if(isset($_GET['page'])){
-                $pagename = $_GET['page'];
+                $pagename = secure($_GET['page']);
                 
                 $page_db=new DB_PAGE();
-                
-                if($page_db->isPage($pagename)){
-                    $pageDetails=$page_db->getPageDetails($pagename);
-                    
+	            
+	            $pageDetails=$page_db->getPageDetails($pagename);
+	            if(!empty($pageDetails)){
                     if($pageDetails['custom_page']==1){
 	                    $filename=CUSTOM_PAGE_PATH.$pagename.".php";
 	                    if(file_exists($filename)){

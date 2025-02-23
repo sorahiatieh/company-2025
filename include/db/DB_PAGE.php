@@ -1,5 +1,9 @@
 <?php
 	class DB_PAGE {
+		/**
+		 * @param $name
+		 * @return bool|void
+		 */
 		function isPage($name){
 			global $mysqli;
 			
@@ -11,6 +15,10 @@
 			return (bool) $row[0];
 		}
 		
+		/**
+		 * @param $name
+		 * @return array|false|void|null
+		 */
 		function getPageDetails($name){
 			global $mysqli;
 			$q="select * from tbl_pages where `name`='$name'";

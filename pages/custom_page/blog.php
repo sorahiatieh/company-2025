@@ -22,18 +22,18 @@
          ?>
          <div class="item row">
              <div class="col-md-4">
-                 <a href="index.php?page=blog_details&id=<?=$item['id']; ?>">
-                     <img src="assets/img/blog/<?= $item['id']; ?>.jpg" class="img-responsive img-hover img-border wp-post-image" alt="">
+                 <a href="index.php?page=show_blog&id=<?= $item['id']; ?>">
+                     <img src="assets/img/blog/<?= $item['id']; ?>.jpg" class="img-responsive img-hover img-border wp-post-image" alt="<?= $item['title']; ?>">
                  </a>
              </div>
              <div class="col-md-8">
-                 <h3><a href="index.php?page=blog_details&id=<?=$item['id']; ?>"><?= $item['title']; ?></a></h3>
+                 <h3><a href="index.php?page=show_blog&id=<?= $item['id']; ?>"><?= $item['title']; ?></a></h3>
 	             <?php
 		             $text=nl2br(strip_tags($item['text']));
-		             echo mb_substr($text,0,150);
+		             echo trim(mb_substr($text,0,200));
 	             ?>...
                  <p></p>
-                 <a href="index.php?page=blog_details&id=<?=$item['id']; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
+                 <a href="index.php?page=show_blog&id=<?= $item['id']; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
              </div>
          </div>
          <?php

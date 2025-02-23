@@ -1,5 +1,9 @@
 <?php
+	
 	class DB_SLIDER{
+		/**
+		 * @return array
+		 */
 		function getList(){
 			global $mysqli;
 			$q="select * from tbl_sliders where `enable`=1";
