@@ -8,8 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <title><?php require PAGE_PATH.'site_title.php'; ?></title>
-    <meta name="keywords" content="<?= $setting->getSetting('site_keywords'); ?>">
-    <meta name="description" content="<?= $setting->getSetting('site_description'); ?>">
+    <meta name="keywords" content="<?php require PAGE_PATH.'site_keywords.php'; ?>">
+    <meta name="description" content="<?php require PAGE_PATH.'site_description.php'; ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
