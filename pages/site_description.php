@@ -1,4 +1,6 @@
 <?php
+	defined("_AST") or die("Access denied");
+	
 	if(isset($_GET['page'])){
 		$pagename = $_GET['page'];
 		$page_db=new DB_PAGE();

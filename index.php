@@ -2,6 +2,7 @@
     define("_AST",1);
     require "include/inc.php";
    $setting=new DB_SETTING();
+   require  PAGE_PATH.'controller.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
