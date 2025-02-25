@@ -332,6 +332,11 @@ footer{
     {
         width: 750px;
     }
+    .avatar{
+        width: 64px;
+        height: 64px;
+        margin-left: 5px;
+    }
 }
 //*******************************************
 .content-lorem {
@@ -410,6 +415,11 @@ footer{
         .item{
             border-bottom: 1px solid var(--color-border);
         }
+    }
+
+    .avatar{
+        width: 24px;
+        height: 24px;
     }
 }
 //***************************************************

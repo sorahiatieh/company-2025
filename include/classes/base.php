@@ -1,65 +1,67 @@
 <?php
 	class Base{
-		private $siteTitle="";
-		private $siteKeywords="";
-		private $siteDescription="";
-		private $pageType="page";
+		private static $siteTitle="";
+		private static $siteKeywords="";
+		private static $siteDescription="";
+		private static $pageType="page";
 		
 		/**
-		 * @param $title
-		 * @return void
+		 * @return string
 		 */
-		public function setSiteTitle($title){
-			$this->siteTitle = $title;
+		public static function getSiteTitle(){
+			return self::$siteTitle;
+		}
+		
+		/**
+		 * @param string $siteTitle
+		 */
+		public static function setSiteTitle($siteTitle){
+			self::$siteTitle=$siteTitle;
 		}
 		
 		/**
 		 * @return string
 		 */
-		public function getSiteTitle(){
-			return $this->siteTitle;
+		public static function getSiteKeywords(){
+			return self::$siteKeywords;
 		}
+		
 		/**
 		 * @param string $siteKeywords
 		 */
-		public function setSiteKeywords($siteKeywords){
-			$this->siteKeywords=$siteKeywords;
+		public static function setSiteKeywords($siteKeywords){
+			self::$siteKeywords=$siteKeywords;
 		}
+		
 		/**
 		 * @return string
 		 */
-		public function getSiteKeywords(){
-			return $this->siteKeywords;
+		public static function getSiteDescription(){
+			return self::$siteDescription;
 		}
-		
 		
 		/**
 		 * @param string $siteDescription
 		 */
-		public function setSiteDescription($siteDescription){
-			$this->siteDescription=$siteDescription;
+		public static function setSiteDescription($siteDescription){
+			self::$siteDescription=$siteDescription;
 		}
-		
 		
 		/**
 		 * @return string
 		 */
-		public function getSiteDescription(){
-			return $this->siteDescription;
+		public static function getPageType(){
+			return self::$pageType;
 		}
 		
 		/**
 		 * @param string $pageType
 		 */
-		public function setPageType($pageType){
-			$this->pageType=$pageType;
+		public static function setPageType($pageType){
+			self::$pageType=$pageType;
 		}
-		/**
-		 * @return string
-		 */
-		public function getPageType(){
-			return $this->pageType;
-		}
+		
+		
 	}
 	
 ?>
