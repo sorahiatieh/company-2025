@@ -5,6 +5,8 @@
 		private static $siteDescription="";
 		private static $pageType="page";
 		
+		private static $data=array();
+		
 		/**
 		 * @return string
 		 */
@@ -61,6 +63,22 @@
 			self::$pageType=$pageType;
 		}
 		
+		/**
+		 * @param $page_name
+		 * @param $data
+		 * @return void
+		 */
+		public static function setData($page_name,$data){
+			self::$data[$page_name]=$data;
+		}
+		
+		/**
+		 * @param $page_name
+		 * @return mixed
+		 */
+		public static function getData($page_name){
+			return self::$data[$page_name];
+		}
 		
 	}
 	

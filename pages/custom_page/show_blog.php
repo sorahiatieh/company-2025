@@ -1,21 +1,11 @@
 <?php
 	defined("_AST") or die("Access denied");
-	//$jdate_c=new PersianDate();
-    if (!isset($_GET['id'])) {
-        require CUSTOM_PAGE_PATH.'404.php';
-    }else{
-        $id=secure($_GET['id']);
-        $blog_db=new DB_BLOG();
-	    
-	    $blogDetails=$blog_db->getBlogDetails($id);
-	    if(empty($blogDetails)){
-	        require CUSTOM_PAGE_PATH.'404.php';
-        }else{
+    $mydata=Base::getData("show_blog");
 ?>
 <div class="container content-future">
    <div class="row">
        <div class="col-lg-12">
-            <h2 class="titr"><?= $blogDetails['title']; ?></h2>
+            <h2 class="titr"><?= $mydata['BlogDetails']['title']; ?></h2>
             <ol class="breadcrumb">
                 <li>
                     <a href="#">خانه</a>
@@ -23,7 +13,7 @@
                 <li>
                     <a href="#">بلاگ</a>
                 </li>
-                <li class="active"><?= $blogDetails['title']; ?></li>
+                <li class="active"><?= $mydata['BlogDetails']['title']; ?></li>
 
             </ol>
         </div>
@@ -33,11 +23,10 @@
          <hr>
          <p>
             <i class="fi fi-clock-1"></i>
-            تاریخ ارسال :<!-- <?php /*= $jdate_c->jdate('Y/m/d',$blogDetails['date']); */?></p>-->
-            تاریخ ارسال : <?= $blogDetails['date']; ?></p>
-            <img src="assets/img/blog/<?= $blogDetails['id']; ?>.jpg" alt="<?= $blogDetails['title']; ?>">
+            تاریخ ارسال : <?= $mydata['BlogDetails']['date']; ?></p>
+            <img src="assets/img/blog/<?= $mydata['BlogDetails']['id']; ?>.jpg" alt="<?= $mydata['BlogDetails']['title']; ?>">
         <hr>
-	      <?= $blogDetails['text']; ?>
+	      <?= $mydata['BlogDetails']['text']; ?>
       </div>
       <div class="col-md-4">
           <?php
@@ -47,10 +36,5 @@
    </div>
    
 </div>
-
-<?php
-        }
-    }
-?>
 
         
