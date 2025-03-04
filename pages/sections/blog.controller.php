@@ -5,7 +5,7 @@
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];
 		
-		$item['ImageURL']="assets/img/blog/no-image.jpg";
+		$item['ImageURL']="assets/img/blog/no-pic.jpg";
 		if(file_exists(dirname(__FILE__).'/../../assets/img/blog/'.$item['id'].'.jpg')){
 			$item['ImageURL']="assets/img/blog/".$item['id'].'.jpg';
 		}

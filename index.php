@@ -39,7 +39,7 @@
             $page_name=Base::getPageName();
             
             if(Base::getHasView()){
-	            $filename=CUSTOM_PAGE_PATH.$page_name.".php";
+	            $filename=SECTIONS.$page_name.".view.php";
 	            require $filename;
             }else{
 	            require PAGE_PATH."public_page.php";

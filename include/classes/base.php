@@ -123,6 +123,10 @@
 			return self::$data[$page_name];
 		}
 		
+		public static function getPageDetails(){
+			return self::$data['public_page']['PageDetails'];
+		}
+		
 	}
 	
 ?>

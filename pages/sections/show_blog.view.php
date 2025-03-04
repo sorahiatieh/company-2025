@@ -30,7 +30,7 @@
       </div>
       <div class="col-md-4">
           <?php
-              require "sidebar.php";
+              require "sidebar.view.php";
           ?>
       </div>
    </div>

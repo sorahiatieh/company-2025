@@ -28,13 +28,14 @@
 		Base::setData("public_page",$CP);
 		
 		if($pageDetails['custom_page']==1){
-			$filename=PAGE_PATH.'controller/'.$pageDetails['name'].'.php';
+			$filename=SECTIONS.$pageDetails['name'].'.controller.php';
+			
 			if(file_exists($filename)){
 				Base::setIsCustomPage(true);
 				
 				require $filename;
 			}
-			$filename=CUSTOM_PAGE_PATH.$pageDetails['name'].'.php';
+			$filename=SECTIONS.$pageDetails['name'].'.view.php';
 			if(Base::getIsCustomPage() && file_exists($filename)){
 				Base::setHasView(true);
 			}

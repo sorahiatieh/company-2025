@@ -79,6 +79,6 @@
     <?php
 	}
 	else{
-		require CUSTOM_PAGE_PATH.'404.php';
+		require SECTIONS.'404.php';
 	}
 ?>

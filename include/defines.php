@@ -1,6 +1,6 @@
 <?php
 	define("PAGE_PATH",realpath(dirname(__FILE__).'/../pages').'/');
-	define("CUSTOM_PAGE_PATH",realpath(dirname(__FILE__).'/../pages/custom_page/').'/');
-	define("REQUIRE_PATH",realpath(CUSTOM_PAGE_PATH.'/../requires/').'/');
+	define("SECTIONS",realpath(dirname(__FILE__).'/../pages/sections/').'/');
+	define("REQUIRE_PATH",realpath(dirname(__FILE__).'/../pages/requires/').'/');
 
 
