@@ -13,6 +13,9 @@
 		
 		$items[$i]=$item;
 	}
+	
+	
+	Base::setPageDetails("title",count($items)." پروژه آخر");
 	$CP['Items']=$items;
 	
 	Base::setData("projects",$CP);

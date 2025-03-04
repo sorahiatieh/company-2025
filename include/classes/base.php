@@ -123,10 +123,16 @@
 			return self::$data[$page_name];
 		}
 		
+		/**
+		 * @return mixed
+		 */
 		public static function getPageDetails(){
-			return self::$data['public_page']['PageDetails'];
+			return self::$data['_page_details'];
 		}
 		
+		public static function setPageDetails($name,$value){
+			self::$data['_page_details'][$name]=$value;
+		}
 	}
 	
 ?>

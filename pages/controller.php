@@ -24,8 +24,7 @@
 		Base::setSiteDescription($pageDetails['description']);
 		
 		//For Public Page
-		$CP['PageDetails']=$pageDetails;
-		Base::setData("public_page",$CP);
+		Base::setData("_page_details",$pageDetails);
 		
 		if($pageDetails['custom_page']==1){
 			$filename=SECTIONS.$pageDetails['name'].'.controller.php';
