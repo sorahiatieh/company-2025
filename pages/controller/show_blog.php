@@ -19,13 +19,14 @@
 		Base::setSiteKeywords($blogDetails['keywords']);
 		Base::setSiteDescription($blogDetails['description']);
 		
-	$CP=array();
+	
+	$CP['BlogDetails']=$blogDetails;
 	Base::setData("show_blog",$CP);
 	
-	/*$CP['BlogDetails']=$blogDetails;*/
 	
-	echo "<pre>";
+	
+	/*echo "<pre>";
 	print_r($CP);
 	echo "</pre>";
-	exit;
+	exit;*/
 ?>

@@ -1,7 +1,7 @@
 <?php
     define("_AST",1);
     require "include/inc.php";
-   $setting=new DB_SETTING();
+    
    require  PAGE_PATH.'controller.php';
 ?>
 <!DOCTYPE html>
@@ -36,28 +36,14 @@
 
     <div class="container content">
         <?php
-            if(isset($_GET['page'])){
-                $pagename = secure($_GET['page']);
-                
-                $page_db=new DB_PAGE();
-	            
-	            $pageDetails=$page_db->getPageDetails($pagename);
-	            if(!empty($pageDetails)){
-                    if($pageDetails['custom_page']==1){
-	                    $filename=CUSTOM_PAGE_PATH.$pagename.".php";
-	                    if(file_exists($filename)){
-		                    require $filename;
-	                    }else
-		                    require PAGE_PATH."public_page.php";
-                    }else{
-                        require PAGE_PATH."public_page.php";
-                    }
-	                
-                }else
-	                require CUSTOM_PAGE_PATH."404.php";
+            $page_name=Base::getPageName();
+            
+            if(Base::getHasView()){
+	            $filename=CUSTOM_PAGE_PATH.$page_name.".php";
+	            require $filename;
+            }else{
+	            require PAGE_PATH."public_page.php";
             }
-            else
-                require CUSTOM_PAGE_PATH."main.php";
         ?>
     </div>
     <!-- فوووووووتر-->

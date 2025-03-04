@@ -4,9 +4,52 @@
 		private static $siteKeywords="";
 		private static $siteDescription="";
 		private static $pageType="page";
+		public static $data=array();
+		private static $pageName="";
+		private static $isCustomPage=false;
+		private static $hasView=false;
 		
-		private static $data=array();
+		/**
+		 * @return bool
+		 */
+		public static function getHasView(){
+			return self::$hasView;
+		}
 		
+		/**
+		 * @param bool $hasView
+		 */
+		public static function setHasView($hasView){
+			self::$hasView=$hasView;
+		}
+		
+		/**
+		 * @return bool
+		 */
+		public static function getIsCustomPage(){
+			return self::$isCustomPage;
+		}
+		
+		/**
+		 * @param bool $isCustomPage
+		 */
+		public static function setIsCustomPage($isCustomPage){
+			self::$isCustomPage=$isCustomPage;
+		}
+		
+		/**
+		 * @return string
+		 */
+		public static function getPageName(){
+			return self::$pageName;
+		}
+		
+		/**
+		 * @param string $pageName
+		 */
+		public static function setPageName($pageName){
+			self::$pageName=$pageName;
+		}
 		/**
 		 * @return string
 		 */

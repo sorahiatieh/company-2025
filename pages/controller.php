@@ -16,21 +16,34 @@
 		if(empty($pageDetails)){
 			die('404');
 		}
+		
+		Base::setPageName($pagename);
+		
 		Base::setSiteTitle($pageDetails['title']);
 		Base::setSiteKeywords($pageDetails['keywords']);
 		Base::setSiteDescription($pageDetails['description']);
 		
+		//For Public Page
+		$CP['PageDetails']=$pageDetails;
+		Base::setData("public_page",$CP);
+		
 		if($pageDetails['custom_page']==1){
 			$filename=PAGE_PATH.'controller/'.$pageDetails['name'].'.php';
 			if(file_exists($filename)){
+				Base::setIsCustomPage(true);
+				
 				require $filename;
 			}
+			$filename=CUSTOM_PAGE_PATH.$pageDetails['name'].'.php';
+			if(Base::getIsCustomPage() && file_exists($filename)){
+				Base::setHasView(true);
+			}
 		}
-		/*if(!empty($pageDetails)){
 		
-			
-		}else
-			Base::getSiteTitle("یافت نشد!");
-		*/
 	}
+	
+	/*echo "<pre>";
+	print_r(Base::$data);
+	echo "</pre>";
+	exit;*/
 ?>
