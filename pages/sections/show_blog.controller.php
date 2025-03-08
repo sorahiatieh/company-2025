@@ -6,6 +6,9 @@
 	
 		$id=secure($_GET['id']);
 		
+		if(!Validator::isNumber($id)){
+			die('404');
+		}
 		$blogDetails=$blog_db->getBlogDetails($id);
 		if(empty($blogDetails)){
 				die('404');

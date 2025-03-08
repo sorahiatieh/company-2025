@@ -33,7 +33,7 @@
         require "pages/requires/header.php";
        ?>
     </div>
-
+ 
     <div class="container content">
         <?php
             $page_name=Base::getPageName();
