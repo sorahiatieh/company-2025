@@ -11,6 +11,9 @@
 		
 		$page_db=new DB_PAGE();
 		
+		if(!Validator::is_az09_($pagename)){
+			die('404');
+		}
 		$pageDetails=$page_db->getPageDetails($pagename);
 		
 		if(empty($pageDetails)){
