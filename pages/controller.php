@@ -11,38 +11,42 @@
 		
 		$page_db=new DB_PAGE();
 		
-		if(!Validator::is_az09_($pagename)){
-			die('404');
-		}
-		$pageDetails=$page_db->getPageDetails($pagename);
-		
-		if(empty($pageDetails)){
-			die('404');
-		}
-		
-		Base::setPageName($pagename);
-		
-		Base::setSiteTitle($pageDetails['title']);
-		Base::setSiteKeywords($pageDetails['keywords']);
-		Base::setSiteDescription($pageDetails['description']);
-		
-		//For Public Page
-		Base::setData("_page_details",$pageDetails);
-		
-		if($pageDetails['custom_page']==1){
-			$filename=SECTIONS.$pageDetails['name'].'.controller.php';
+		try{
+			if(!Validator::is_az09_($pagename)){
+				throw new NotFounf();
+			}
+			$pageDetails=$page_db->getPageDetails($pagename);
 			
-			if(file_exists($filename)){
-				Base::setIsCustomPage(true);
-				
-				require $filename;
+			if(empty($pageDetails)){
+				throw new NotFounf();
 			}
-			$filename=SECTIONS.$pageDetails['name'].'.view.php';
-			if(Base::getIsCustomPage() && file_exists($filename)){
-				Base::setHasView(true);
+			
+			Base::setPageName($pagename);
+			
+			Base::setSiteTitle($pageDetails['title']);
+			Base::setSiteKeywords($pageDetails['keywords']);
+			Base::setSiteDescription($pageDetails['description']);
+			
+			//For Public Page
+			Base::setData("_page_details",$pageDetails);
+			
+			if($pageDetails['custom_page']==1){
+				$filename=SECTIONS.$pageDetails['name'].'.controller.php';
+				
+				if(file_exists($filename)){
+					Base::setIsCustomPage(true);
+					
+					require $filename;
+				}
+				$filename=SECTIONS.$pageDetails['name'].'.view.php';
+				if(Base::getIsCustomPage() && file_exists($filename)){
+					Base::setHasView(true);
+				}
 			}
 		}
+		catch(Exception $e){
 		
+		}
 	}
 	
 	/*echo "<pre>";

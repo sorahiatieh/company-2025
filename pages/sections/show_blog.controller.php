@@ -7,15 +7,15 @@
 		$id=secure($_GET['id']);
 		
 		if(!Validator::isNumber($id)){
-			die('404');
+			throw new NotFounf();
 		}
 		$blogDetails=$blog_db->getBlogDetails($id);
 		if(empty($blogDetails)){
-				die('404');
+			throw new NotFounf();
 		}
 			
 		if($blogDetails['enable']==0){
-			die('404');
+			throw new NotFounf();
 		}
 		
 		Base::setSiteTitle($blogDetails['title']);
