@@ -45,7 +45,8 @@
 			}
 		}
 		catch(Exception $e){
-		
+			Base::setSiteTitle("یافت نشد!");
+			Base::setPageName("404");
 		}
 	}
 	
