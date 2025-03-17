@@ -1,6 +1,6 @@
 <?php
 	if(!isset($_GET['id'])){
-		throw new NotFounf();
+		throw new NotFound();
 	}
 	$project_db=new DB_PORTFOLIO();
 	
@@ -9,10 +9,10 @@
 	$projectDetails=$project_db->getPortfolioDetails($id);
 	
 	if(empty($projectDetails))
-		throw new NotFounf();
+		throw new NotFound();
 		
 	if($projectDetails['enable']==0)
-		throw new NotFounf();
+		throw new NotFound();
 			
 	Base::setSiteTitle("پروژه: ".$projectDetails['title']);
 	Base::setSiteKeywords($projectDetails['keywords']);

@@ -7,15 +7,15 @@
 		$id=secure($_GET['id']);
 		
 		if(!Validator::isNumber($id)){
-			throw new NotFounf();
+			throw new NotFound();
 		}
 		$blogDetails=$blog_db->getBlogDetails($id);
 		if(empty($blogDetails)){
-			throw new NotFounf();
+			throw new NotFound();
 		}
 			
 		if($blogDetails['enable']==0){
-			throw new NotFounf();
+			throw new NotFound("این خبر غیر فعال می باشد!");
 		}
 		
 		Base::setSiteTitle($blogDetails['title']);

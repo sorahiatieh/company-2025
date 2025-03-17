@@ -13,12 +13,12 @@
 		
 		try{
 			if(!Validator::is_az09_($pagename)){
-				throw new NotFounf();
+				throw new NotFound();
 			}
 			$pageDetails=$page_db->getPageDetails($pagename);
 			
 			if(empty($pageDetails)){
-				throw new NotFounf();
+				throw new NotFound();
 			}
 			
 			Base::setPageName($pagename);
@@ -46,6 +46,7 @@
 		}
 		catch(Exception $e){
 			Base::setSiteTitle("یافت نشد!");
+			Base::setHasView(true);
 			Base::setPageName("404");
 		}
 	}
