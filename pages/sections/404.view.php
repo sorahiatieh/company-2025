@@ -7,7 +7,7 @@
       <h2><?= NotFound::getContentMassage(); ?></h2>
       <p class="text-center">توصیه ما به شما استفاده از لینکهای زیر است:</p>
       <ul class="menu__links_404">
-          <li class="menu__item"><a href="#">خانه</a></li>
+          <li class="menu__item"><a href="index.php">خانه</a></li>
           <li class="menu__item"><a href="#">بلاگ</a></li>
           <li class="menu__item"><a href="#">گالری تصاویر</a></li>
           <li class="menu__item"><a href="#">زیرمنو</a></li>
