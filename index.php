@@ -12,19 +12,16 @@
     <meta name="keywords" content="<?= Base::getSiteKeywords(); ?>">
     <meta name="description" content="<?= Base::getSiteDescription(); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />
+    <?php
+        Head::makeHead();
+    ?>
+    <!--<link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/css/nivo-slider.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/font-icon.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/font-icon.css">-->
     
-    
-    <script src="assets/js/jquery-3.0.0.min.js"></script>
-    <script src="assets/js/jquery.nivo.slider.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!--<script src="assets/js/jquery.nivo.slider.js"></script>
+    <script src="assets/js/script.js"></script>-->
     
 </head>
 <body>

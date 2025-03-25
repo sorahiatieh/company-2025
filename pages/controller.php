@@ -6,6 +6,12 @@
 	Base::setSiteTitle($setting_db->getSetting('site_keywords'));
 	Base::setSiteTitle($setting_db->getSetting('site_description'));
 	
+	
+	Head::addScript("assets/js/jquery-3.0.0.min.js");
+	Head::addScript("assets/js/bootstrap.min.js");
+	
+	Head::addStylesheet("assets/css/bootstrap.css");
+	Head::addStylesheet("assets/css/style.min.css");
 	if(isset($_GET['page'])){
 		$pagename = $_GET['page'];
 		
