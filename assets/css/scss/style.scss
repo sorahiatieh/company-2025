@@ -494,6 +494,7 @@ footer{
     min-height:100%; 
    
     .matn{
+        background-color: #eee;
         color: var(--color-body);
         text-align: center;
         width:800px; 
@@ -517,6 +518,8 @@ footer{
             gap: 20px;
         }
     }
+
+
 }
   
  .foot-error{
