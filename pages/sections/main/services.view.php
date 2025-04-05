@@ -1,15 +1,12 @@
 <?php
-  $service=new DB_SERVICE();
-  $setting=new DB_SETTING();
-  
-  $items=$service->getList();
+	defined("_AST") or die("Access denied");
 ?>
 <div class="row">
 	<div class="col-md-12">
-		<h2 class="titr"><?= $setting->getSetting('service_title'); ?></h2>
+		<h2 class="titr"><?= $CP['servicesBoxTitle']; ?></h2>
 	</div>
     <?php
-        foreach($items as $item){
+        foreach($CP['ListOfServices'] as $item){
     ?>
 	<div class="col-md-4">
 		<div class="panel panel-default">

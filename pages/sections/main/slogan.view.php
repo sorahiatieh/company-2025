@@ -1,6 +1,5 @@
 <?php
-  $setting=new DB_SETTING();
-  $sloganDetails=json_decode($setting->getSetting("main_slogan"),true);
+	defined("_AST") or die("Access denied");
 ?>
 <div class="well">
 	<div class="row">

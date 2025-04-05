@@ -1,17 +1,19 @@
 <?php
-    require SECTIONS."main/slider.php";
+    require SECTIONS."main/slider.view.php";
+    
+    $CP=Base::getData("main");
 ?>
 <div class="container">
     <?php
         //خدمات شرکت-
-	    require SECTIONS."main/services.php";
+	    require SECTIONS."main/services.view.php";
         // آخرین نمونه کارها
-	    require SECTIONS."main/portfolio.php";
+	    require SECTIONS."main/portfolio.view.php";
         // آخرین های وبلاگ
-	    require SECTIONS."main/last_blogs.php";
+	    require SECTIONS."main/last_blogs.view.php";
         //چرا باید شرکت ما را انتخاب نمایید
-	    require SECTIONS."main/why_choice.php";
+	    require SECTIONS."main/why_choice.view.php";
         // شعار شرکت
-	    require SECTIONS."main/slogan.php";
+	    require SECTIONS."main/slogan.view.php";
     ?>
 </div>

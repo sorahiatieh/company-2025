@@ -1,15 +1,12 @@
 <?php
-    $portfolio=new DB_PORTFOLIO();
-    $setting=new DB_SETTING();
-    
-    $items=$portfolio->getList(4);
+	defined("_AST") or die("Access denied");
 ?>
 <div class="row">
 	<div class="col-lg-12">
-		<h2 class="titr"><?= $setting->getSetting('portfolio_title'); ?></h2>
+		<h2 class="titr"><?= $CP['servicesBoxTitle']; ?></h2>
 	</div>
     <?php
-        foreach($items as $item){
+        foreach($CP['ListOfPortfolioes'] as $item){
     ?>
 	<div class="item col-md-3 col-sm-6 col-xs-6">
 		<a href="index.php?page=show_portfolio&id=<?= $item['id']; ?>">

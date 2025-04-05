@@ -1,14 +1,12 @@
 <?php
-    $blog=new DB_BLOG();
-    $setting=new DB_SETTING();
-    $items=$blog->getList(4);
+	defined("_AST") or die("Access denied");
 ?>
 <div class="row">
 	<div class="col-lg-12">
-		<h2 class="titr"><?= $setting->getSetting('blog_title'); ?></h2>
+		<h2 class="titr"><?= $CP['servicesBoxTitle']; ?></h2>
 	</div>
     <?php
-        foreach($items as $item){
+        foreach($CP['ListOfBlogs'] as $item){
     ?>
 	<div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
 		<a href="index.php?page=show_blog&id=<?= $item['id']; ?>">

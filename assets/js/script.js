@@ -25,11 +25,11 @@ $(document).ready(function(){
          controlNav:true,
          directionNav:true,
          pauseOnHover:true,
-		  animSpeed: 600,
+         animSpeed: 600,
          prevText:'&lt',
          nextText:'&gt',
          slices: 15,
-		  startSlide: 0,
+         startSlide: 0,
          manualAdvance:false
     });
 });
