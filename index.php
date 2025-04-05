@@ -16,13 +16,10 @@
         Head::makeHead();
     ?>
     <!--<link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="assets/css/nivo-slider.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/font-icon.css">-->
-    
-    <!--<script src="assets/js/jquery.nivo.slider.js"></script>
-    <script src="assets/js/script.js"></script>-->
-    
+
+      -->
+
+  
 </head>
 <body>
    <div class="header">

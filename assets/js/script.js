@@ -1,12 +1,7 @@
 //<script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
 
 $(document).ready(function(){
-    $('#lightgallery').lightGallery({
-        pager: true,
-        thumbnail: true,
-        mode:'lg-fade',
-        iframeMaxWidth:'90%',
-    });
+    $('#lightgallery').lightGallery();
     
     ("#myCarousel").carousel();
 
@@ -21,30 +16,20 @@ $(document).ready(function(){
     });
 
     // Enable nivo slider
-    $('#slider').nivoSlider();
 
-    /*  $('#slider').nivoSlider({
-		  effect:'random',
-		  slices: 5,
-		  boxCols: 8,
-		  boxRows: 4,
-		  animSpeed: 500,
-		  pauseTime: 3000,
+     $('#slider').nivoSlider({
+         boxCols: 8,
+         boxRows: 4,
+         pauseTime: 3000,
+         effect:'fade',
+         controlNav:true,
+         directionNav:true,
+         pauseOnHover:true,
+		  animSpeed: 600,
+         prevText:'&lt',
+         nextText:'&gt',
+         slices: 15,
 		  startSlide: 0,
-		  directionNav:true,
-		  controlNav:true,
-		  controlNavThumbs:false,
-		  pauseOnHover:true,
-		  manualAdvance:false,
-		  prevText:'Prev',
-		  nextText:'Next',
-		  randomStart:false,
-		  beforeChange:function(){},
-		  afterChange:function(){},
-		  slideshowEnd:function(){},
-		  lastSlide:function(){},
-		  afterLoad:function(){}
-    });*/
-
-
+         manualAdvance:false
+    });
 });

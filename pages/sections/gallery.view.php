@@ -19,7 +19,7 @@
            <div class="gallery-image">
             <div id="lightgallery">
                 <?php
-                    for($i=0; $i<16; $i++){
+                    for($i=1; $i<16; $i++){
                 ?>
                 <a class="col-lg-3 col-sm-3 col-xs-3" href="assets/img/gallery/<?= $i; ?>.jpg">
                     <img src="assets/img/gallery/<?= $i; ?>.jpg" />
