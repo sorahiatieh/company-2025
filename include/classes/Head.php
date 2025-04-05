@@ -59,11 +59,13 @@
 		static function makeHeadStylesheets(){
 			foreach (self::$stylesheets as $item){
 				$media='';
-				
-				if($item['Media']!='screen')
+				//بعدا باید بررسی شود که آدرس لوکال خودمون هست یا نه
+				// بعداباید اصلاح شود
+				$time=filemtime($item['Path']);
+				if($item['Media']!='all')
 					$media=' media="'.$item['Media'].'"';
 				
-				echo "<link rel='stylesheet' href='".$item['Path']."'".$media.">\n\t";
+				echo "<link rel='stylesheet' href='".$item['Path'].'?'.$time."'".$media.">\n\t";
 				
 			}
 		}

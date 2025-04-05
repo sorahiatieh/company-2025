@@ -1,7 +1,7 @@
 <?php
 	$setting=new DB_SETTING();
 	$whyDetails=json_decode($setting->getSetting("main_why"),true);
-    var_dump($whyDetails);
+    //var_dump($whyDetails);
 ?>
 <div class="row">
 	<?php
