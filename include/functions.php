@@ -14,4 +14,8 @@
 		
 		return $input;
 	}
+	
+	function getRealIP(){
+		return $_SERVER['REMOTE_ADDR'];
+	}
 ?>
