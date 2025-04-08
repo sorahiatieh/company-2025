@@ -1,5 +1,8 @@
 <?php
 	$CP=array();
+	
+	Base::setSiteTitle($setting_db->getSetting('site_title'));
+	
 	// اسلایدر
 	require SECTIONS."main/slider.controller.php";
 	// بخش سرویس ها

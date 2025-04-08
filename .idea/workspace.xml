@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_encode.php" beforeDir="false" afterPath="$PROJECT_DIR$/json_encode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sections/main.controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sections/main.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/last_blogs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/portfolio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/slogan.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sections/main/why_choice.php" beforeDir="false" />
-    </list>
+    <list default="true" id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +81,7 @@
       <workItem from="1742218694068" duration="7367000" />
       <workItem from="1742887593355" duration="7622000" />
       <workItem from="1743839887227" duration="5667000" />
-      <workItem from="1743864003264" duration="6558000" />
+      <workItem from="1743864003264" duration="10139000" />
     </task>
     <servers />
   </component>

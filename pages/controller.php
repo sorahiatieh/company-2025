@@ -59,6 +59,7 @@
 		}
 	}
 	catch(Exception $e){
+		header('HTTP/1.0 404 Not Found');
 		Base::setSiteTitle("یافت نشد!");
 		Base::setHasView(true);
 		Base::setPageName("404");
