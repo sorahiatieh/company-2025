@@ -1,4 +1,6 @@
 <?php
+	defined("_AST") or die("Access denied");
+	
 	date_default_timezone_set("Asia/Tehran");
 	
 	$mysqli=new mysqli("localhost","root","","company-2025");

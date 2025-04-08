@@ -1,5 +1,6 @@
 <?php
-    //defined("_AS") or die("Access denied!");
+	defined("_AST") or die("Access denied");
+	
 	spl_autoload_register('as_autoloader');
 	
 	function as_autoloader($class){

@@ -1,5 +1,5 @@
 <?php
-	
+	defined("_AST") or die("Access denied");
 	function secure($input)
 	{
 		global $mysqli;

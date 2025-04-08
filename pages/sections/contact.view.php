@@ -26,36 +26,39 @@
      <div class="row">
          <div class="col-md-8">
             <h3>ارسال پیام</h3>
-            <form role="form">
+            <form id="frmContact">
                 <div class="form-group">
                     <div class="controls">
                         <label>نام و نام خانوادگی :</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control" name="txtName">
                         <p class="help-block"></p>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="controls">
                         <label>شماره تماس :</label>
-                        <input type="tel" class="form-control" id="phone">
+                        <input type="tel" class="form-control" name="txtPhone">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="controls">
                         <label>آدرس ایمیل :</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" name="txtEmail">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="controls">
                         <label>متن پیام :</label>
-                        <textarea rows="10" cols="100" class="form-control" id="message" maxlength="999" style="resize:none"></textarea>
+                        <textarea rows="10" cols="100" class="form-control" name="txtMessage" maxlength="999" style="resize:none"></textarea>
                     </div>
                 </div>
                 
                 <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                
+                <div class="text-center">
+                
+                </div>
             </form>
-
          </div>
      </div>
      <hr>
