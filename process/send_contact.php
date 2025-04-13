@@ -39,12 +39,24 @@
 			$ajax->Text = "لطفا متن پیام خود را وارد نمایید!";
 			throw $ajax;
 		}
+		
+		$contact=new DB_CONTACT();
+		$last_id=$contact->addContact(array(
+			"fullName"=>$name,
+			"phone"=>$phone,
+			"email"=>$email,
+			"text"=>$text,
+			"date"=>time(),
+			"ip"=>getRealIP()
+		));
+		
+		$ajax->Status=1;
+		$ajax->Text="پیام شما با موفقیت ارسال شد!";
+		$ajax->LastID=$last_id;
+		throw $ajax;
 	}catch (Ajax $e){
 		$e->makeOutput();
 	}
 	
-	$ajax->Status=1;
-	$ajax->Text="پیام شما با موفقیت ارسال شد!";
-	$ajax->LastID=rand(1,100);
-	throw $ajax;
+	
 ?>

@@ -1,5 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
+	Base::getData("contact");
 ?>
  <div class="container cont-blog">
      <div class="row">
@@ -16,9 +17,9 @@
        </div>
      </div>
      <div class="row">
-         <div class="col-md-8">
+         <!--<div class="col-md-8">
              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fa"></script><script src="http://kharido.ir/OtherPage/GoogleMapsInYourSite.js.aspx?idObjectMap=69648" type="text/javascript"></script>  <div id="map_canvas" style="width:500px; height:500px; "> <a href="http://kharido.ir">آگهی دادن</a> </div>
-         </div>
+         </div>-->
          <div class="col-md-4">
              <?= $pageDetails['text']; ?>
          </div>
@@ -55,9 +56,7 @@
                 
                 <button type="submit" class="btn btn-primary">ارسال پیام</button>
                 
-                <div class="text-center">
-                
-                </div>
+                <div class="text-center"></div>
             </form>
          </div>
      </div>

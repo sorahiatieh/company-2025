@@ -1,20 +1,24 @@
 $(document).ready(function(){
-	$("#frmContact").onsubmit(function (e){
+
+	$("#frmContact").on("submit",function(e){
 		e.preventDefault();
 
 		$.ajax({
 			url:'process/send_contact.php',
-			type: 'POST',
-			data:$(this).serializable(),
+			type:'POST',
 			dataType: 'json',
-			success: function ($result){
-				if ($result.Status==1){
+			data:$(this).serialize(),
+			success: function($result){
+
+				if($result.Status==1)
+				{
 					swal({
-						title: "ارسال پیام",
-						text: $result.Text+"<br> کد پیام: "+$result.LastID,
+						title: "پیام شما با موفقیت ارسال شد.",
+						text: $result.Text+" کد پیام: "+$result.LastID,
 						type: "success"
 					});
-				}else {
+				}
+				else{
 					swal({
 						title: "ارسال ناموفق",
 						text: $result.Text,
@@ -22,7 +26,7 @@ $(document).ready(function(){
 					});
 				}
 			}
-		})
-	})
-
+		});
+	});
 });
+
