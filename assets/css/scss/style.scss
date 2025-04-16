@@ -494,13 +494,11 @@ footer{
     min-height:100%; 
    
     .matn{
+        margin: 50px;
         background-color: #eee;
         color: var(--color-body);
         text-align: center;
-        width:800px; 
-        margin-left: -400px;
-        top: 30%; 
-        left:50%;
+        width:800px;
         
         h1{
             margin:0;
@@ -516,6 +514,10 @@ footer{
             display: flex;
             align-items: center;
             gap: 20px;
+        }
+        .go-home{
+            color: var(--color-border-footer-middle);
+            padding-bottom: 30px;
         }
     }
 

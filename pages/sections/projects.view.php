@@ -23,8 +23,8 @@
                 foreach($CP['Items'] as $item){
              ?>
              <div class="items col-md-4">
-                 <a href="index.php?page=project_details&id=<?= $item['id']; ?>"><img src="<?= $item['ImageURL']; ?>" alt="<?= $item['title']; ?>"></a>
-                 <h4><a href="index.php?page=project_details&id=<?= $item['id']; ?>"><?= $item['title']; ?></a></h4>
+                 <a href="projects/<?= $item['id'].text2url($item['title']); ?>"><img src="<?= $item['ImageURL']; ?>" alt="<?= $item['title']; ?>"></a>
+                 <h4><a href="projects/<?= $item['id'].text2url($item['title']); ?>"><?= $item['title']; ?></a></h4>
                  <?= $item['text']; ?>
              </div>
          <?php

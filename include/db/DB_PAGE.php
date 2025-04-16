@@ -35,6 +35,6 @@
 			if(empty($PageDetails)){
 				return "";
 			}
-			return str_ireplace(' ', '-',$PageDetails['title']).".html";
+			return $PageDetails['link_title'];
 		}
 	}

@@ -2,7 +2,13 @@ options +FollowSymLinks
 RewriteEngine on
 IndexIgnore *
 
+RewriteRule ^([a-z]+)/([0-9]+) index.php?page=show_$1&id=$2
+
+# RewriteRule ^([a-z]+)/ index.php?page=$1
+
+RewriteRule ^blog/ index.php?page=blog
+RewriteRule ^projects/ index.php?page=projects
+
 RewriteRule ^pages/([a-z]+) index.php?page=$1
 
-RewriteRule ^blog/$ index.php?page=blog
-RewriteRule ^blog/([0-9]+) index.php?page=show_blog&id=$1
+# RewriteRule ^blog/([0-9]+) index.php?page=show_blog&id=$1

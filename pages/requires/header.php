@@ -33,7 +33,7 @@
                         </ul>
                     </li>
                     <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
-                        <a href="pages/projects<?= text2url($page->getLinkTitle('projects')); ?>">پروژه ها</a>
+                        <a href="projects/">پروژه ها</a>
                     </li>
                     <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63">
                         <a href="pages/about<?= text2url($page->getLinkTitle('about')); ?>">درباره ما</a>

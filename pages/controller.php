@@ -37,7 +37,7 @@
 		
 		Base::setPageName($pagename);
 		
-		Base::setSiteTitle($pageDetails['title']);
+		Base::setSiteTitle($pageDetails['seo_title']);
 		Base::setSiteKeywords($pageDetails['keywords']);
 		Base::setSiteDescription($pageDetails['description']);
 		
