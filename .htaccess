@@ -3,4 +3,6 @@ RewriteEngine on
 IndexIgnore *
 
 RewriteRule ^pages/([a-z]+) index.php?page=$1
-RewriteRule ^pages/([0-9]+) index.php?page=show_blog&id=$1
+
+RewriteRule ^blog/$ index.php?page=blog
+RewriteRule ^blog/([0-9]+) index.php?page=show_blog&id=$1

@@ -8,10 +8,10 @@
              <h2 class="titr">بلاگ</h2>
              <ol class="breadcrumb">
                 <li>
-                    <a href="#">خانه</a>
+                    <a href="index.php">خانه</a>
                 </li>
                 
-                <li class="active">بلاگ</li>
+                <li class="active"><a href="index.php/blog/">بلاگ</a></li>
             </ol>
          </div>
      </div>
@@ -21,18 +21,18 @@
          ?>
          <div class="item row">
              <div class="col-md-4">
-                 <a href="index.php?page=show_blog&id=<?= $item['id']; ?>">
+                 <a href="blog/<?= $item['id'].text2url($item['title']); ?>">
                      <img src="<?= $item['ImageURL']; ?>" class="img-responsive img-hover img-border wp-post-image" alt="<?= $item['title']; ?>">
                  </a>
              </div>
              <div class="col-md-8">
-                 <h3><a href="index.php?page=show_blog&id=<?= $item['id']; ?>"><?= $item['title']; ?></a></h3>
+                 <h3><a href="blog/<?= $item['id'].text2url($item['title']); ?>"><?= $item['title']; ?></a></h3>
 	             <?php
 		             $text=nl2br(strip_tags($item['text']));
-		             echo trim(mb_substr($text,0,200));
+		             echo trim(mb_substr($text,0,150));
 	             ?>...
                  <p></p>
-                 <a href="index.php?page=show_blog&id=<?= $item['id']; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
+                 <a href="blog/<?= $item['id'].text2url($item['title']); ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
              </div>
          </div>
          <?php
