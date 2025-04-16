@@ -2,4 +2,5 @@ options +FollowSymLinks
 RewriteEngine on
 IndexIgnore *
 
-RewriteRule ^pages/([a-z]*) index.php?page=$1
+RewriteRule ^pages/([a-z]+) index.php?page=$1
+RewriteRule ^pages/([0-9]+) index.php?page=show_blog&id=$1

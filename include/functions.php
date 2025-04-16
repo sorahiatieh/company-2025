@@ -25,6 +25,6 @@
 		
 		$text=str_ireplace(' ','-',$text);
 		
-		return $text.$extention;
+		return '-'.$text.$extention;
 	}
 ?>
