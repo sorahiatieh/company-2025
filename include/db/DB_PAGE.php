@@ -29,4 +29,12 @@
 			
 			return $field;
 		}
+		
+		function getLinkTitle($pagename){
+			$PageDetails = $this->getPageDetails($pagename);
+			if(empty($PageDetails)){
+				return "";
+			}
+			return str_ireplace(' ', '-',$PageDetails['title']).".html";
+		}
 	}

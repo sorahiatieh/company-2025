@@ -1,0 +1,5 @@
+options +FollowSymLinks
+RewriteEngine on
+IndexIgnore *
+
+RewriteRule ^pages/([a-z]*) index.php?page=$1

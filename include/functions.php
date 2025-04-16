@@ -18,4 +18,13 @@
 	function getRealIP(){
 		return $_SERVER['REMOTE_ADDR'];
 	}
+	function text2url($text,$extention='.html'){
+		$text=str_ireplace('  ',' ',$text);
+		$text=str_ireplace('  ',' ',$text);
+		$text=str_ireplace('  ',' ',$text);
+		
+		$text=str_ireplace(' ','-',$text);
+		
+		return $text.$extention;
+	}
 ?>

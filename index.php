@@ -12,14 +12,11 @@
     <meta name="keywords" content="<?= Base::getSiteKeywords(); ?>">
     <meta name="description" content="<?= Base::getSiteDescription(); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <base href="<?= SITE_URL; ?>">
     <?php
         Head::makeHead();
     ?>
   <!--<link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />-->
-
-  
-
-  
 </head>
 <body>
    <div class="header">
