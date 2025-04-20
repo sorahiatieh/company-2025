@@ -37,4 +37,8 @@
 			}
 			return $PageDetails['link_title'];
 		}
+		
+		function getURL($page){
+			return 'pages/'.$page.text2url($this->getLinkTitle('$page'));
+		}
 	}

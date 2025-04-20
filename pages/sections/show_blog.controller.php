@@ -9,27 +9,27 @@
 		if(!Validator::isNumber($id)){
 			throw new NotFound();
 		}
-		$blogDetails=$blog_db->getBlogDetails($id);
+		$blogDetails=$blog_db->getBlogDetails(array(
+			"id"=>$id,
+			"enable"=>1
+		));
 		if(empty($blogDetails)){
 			throw new NotFound();
 		}
-			
-		if($blogDetails['enable']==0){
-			throw new NotFound("این خبر غیر فعال می باشد!");
-		}
+		
 		
 		Base::setSiteTitle($blogDetails['title']);
 		Base::setSiteKeywords($blogDetails['keywords']);
 		Base::setSiteDescription($blogDetails['description']);
 		
 	
-	$CP['BlogDetails']=$blogDetails;
-	Base::setData("show_blog",$CP);
+		$CP['BlogDetails']=$blogDetails;
+		Base::setData("show_blog",$CP);
 	
 	
 	
-	/*echo "<pre>";
-	print_r($CP);
-	echo "</pre>";
-	exit;*/
+		/*echo "<pre>";
+		print_r($CP);
+		echo "</pre>";
+		exit;*/
 ?>

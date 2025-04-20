@@ -1,6 +1,8 @@
 <?php
 	$blog_db=new DB_BLOG();
-	$items=$blog_db->getList(10);
+	$items=$blog_db->getList(array(
+		"enable"=>1
+	),8);
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];
