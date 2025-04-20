@@ -1,8 +1,10 @@
 <?php
 	$blog_db=new DB_BLOG();
-	$items=$blog_db->getList(array(
+	$blog_db->setWheres(array(
 		"enable"=>1
-	),8);
+	));
+	
+	$items=$blog_db->getList('tbl_blogs',8);
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];

@@ -1,13 +1,11 @@
 <?php
-	class DB_CONTACT{
-		/**
-		 * @param $id
-		 * @return bool|void
-		 */
-		function isContact($id){
+	class DB_CONTACT extends DB{
+		
+		function isContact(){
 			global $mysqli;
+			$where=$this->makeWhere();
 			
-			$q="SELECT EXISTS(SELECT 1 FROM tbl_contacts WHERE `id`='$id')";
+			$q="SELECT EXISTS(SELECT 1 FROM tbl_contacts $where)";
 			
 			$result=$mysqli->query($q) or die($mysqli->error);
 			$row=$result->fetch_row();
@@ -15,13 +13,13 @@
 			return (bool) $row[0];
 		}
 		
-		/**
-		 * @param $id
-		 * @return array|false|void|null
-		 */
-		function getContactDetails($id){
+		
+		function getContactDetails(){
 			global $mysqli;
-			$q="select * from tbl_contacts where `id`='$id'";
+			$where=$this->makeWhere();
+			
+			$q="select * from tbl_contacts $where";
+			
 			$result=$mysqli->query($q) or die($mysqli->error);
 			$field=$result->fetch_assoc();
 			
