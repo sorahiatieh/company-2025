@@ -2,10 +2,10 @@
   $slidere=new DB_SLIDER();
   
   
-  Head::addScript("assets/js/jquery.nivo.slider.js");
+  Head::addScript("assets/js/owl.carousel.js");
   
-  Head::addStylesheet("assets/css/themes/default/default.css","screen");
-  Head::addStylesheet("assets/css/nivo-slider.css");
+  Head::addStylesheet("assets/css/owl.carousel.css");
+  Head::addStylesheet("assets/css/owl.theme.css");
   
   $CP['ListOfSliders']=$slidere->getList();
 ?>

@@ -4,7 +4,7 @@
 <div class="slider-wrapper theme-defult">
     <div class="ribbon"></div>
 
-    <div id="slider" class="nivoSlider">
+    <div class="owl-carousel owl-theme">
     <?php
 			foreach($CP['ListOfSliders'] as $item){
         ?>

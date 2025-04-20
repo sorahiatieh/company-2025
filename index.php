@@ -16,7 +16,6 @@
     <?php
         Head::makeHead();
     ?>
-  <!--<link rel="stylesheet" href="assets/css/themes/default/default.css" type="text/css" media="screen" />-->
 </head>
 <body>
    <div class="header">
