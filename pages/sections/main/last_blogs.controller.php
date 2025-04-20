@@ -1,7 +1,7 @@
 <?php
-  $blog=new DB_SERVICE();
+  $blog=new DB_BLOG();
   $setting=new DB_SETTING();
   
-  $CP['ListOfBlogs']=$blog->getList(4);
+  $CP['ListOfBlogs']=$blog->getList(5);
   $CP['servicesBoxTitle']=$setting->getSetting('blog_title');
 ?>
