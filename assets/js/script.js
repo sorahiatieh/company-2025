@@ -17,19 +17,51 @@ $(document).ready(function(){
 
     // Enable nivo slider
 
-     $('#slider').nivoSlider({
-         boxCols: 8,
-         boxRows: 4,
-         pauseTime: 3000,
-         effect:'fade',
-         controlNav:true,
-         directionNav:true,
-         pauseOnHover:true,
-         animSpeed: 600,
-         prevText:'&lt',
-         nextText:'&gt',
-         slices: 15,
-         startSlide: 0,
-         manualAdvance:false
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+
+            effect:'random',
+
+            slices: 15,
+
+            boxCols: 8,
+
+            boxRows: 4,
+
+            animSpeed: 500,
+
+            pauseTime: 3000,
+
+            startSlide: 0,
+
+            directionNav:true,
+
+            controlNav:true,
+
+            controlNavThumbs:false,
+
+            pauseOnHover:true,
+
+            manualAdvance:false,
+
+            prevText:'Prev',
+
+            nextText:'Next',
+
+            randomStart:false,
+
+            beforeChange:function(){},
+
+            afterChange:function(){},
+
+            slideshowEnd:function(){},
+
+            lastSlide:function(){},
+
+            afterLoad:function(){}
+
+        });
+        25
     });
+
 });
