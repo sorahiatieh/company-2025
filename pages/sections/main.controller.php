@@ -19,7 +19,7 @@
 	
 	Base::setData("main",$CP);
 	
-	Head::addScript("assets/js/jquery.nivo.slider.js");
+	//Head::addScript("assets/js/jquery.nivo.slider.js");
 	
 	
 	/*echo "<pre>";
