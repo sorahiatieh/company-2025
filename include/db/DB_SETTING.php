@@ -1,20 +1,19 @@
 <?php
-	class DB_SETTING{
+	class DB_SETTING extends DB{
+		protected $table_name="tbl_settings";
 		/**
 		 * @param $name
 		 * @return mixed|string
 		 */
 		function getSetting($name){
-			global $mysqli;
+			$Details=$this->setWheres(array(
+				"name"=>$name
+			))->getDetails();
 			
-			$q="select `value` from tbl_settings where `name`='$name' LIMIT 1";
+			if(empty($Details)){
+				return  '';
+			}
 			
-			$result = $mysqli->query($q);
-			
-			/*if($result->num_rows==0)
-				return "";*/
-			
-			$row=$result->fetch_row();
-			return $row[0];
+			return $Details['value'];
 		}
 	}

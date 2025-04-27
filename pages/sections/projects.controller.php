@@ -1,6 +1,10 @@
 <?php
+	$CP=array();
 	$portfolio_db=new DB_PORTFOLIO();
-	$items=$portfolio_db->getList(10);
+	
+	$items=$portfolio_db->setWheres(array(
+		"enable"=>1
+	))->getList(10);
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];

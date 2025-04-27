@@ -7,5 +7,8 @@
   Head::addStylesheet("assets/css/owl.carousel.css");
   Head::addStylesheet("assets/css/owl.theme.css");
   
-  $CP['ListOfSliders']=$slidere->getList();
+  
+  $CP['ListOfSliders']=$slidere->setWheres(array(
+      "enable"=>1
+  ))->getList();
 ?>

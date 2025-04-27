@@ -6,7 +6,9 @@
 	
 	$id=secure($_GET['id']);
 	
-	$projectDetails=$project_db->getPortfolioDetails($id);
+	$projectDetails=$project_db->setWheres(array(
+		"id"=>$id
+	))->getDetails();
 	
 	if(empty($projectDetails))
 		throw new NotFound();

@@ -2,7 +2,10 @@
 	class DB_PAGE extends DB {
 		protected $table_name="tbl_pages";
 		function getLinkTitle($pagename){
-			$PageDetails = $this->getPageDetails($pagename);
+			$PageDetails = $this->setWheres(array(
+				"name"=>$pagename
+			))->getDetails();
+			
 			if(empty($PageDetails)){
 				return "";
 			}

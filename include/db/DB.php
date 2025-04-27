@@ -49,9 +49,11 @@
 		}
 		public function setWheres($wheres=array()){
 			$this->wheres=$wheres;
+			
+			return $this;
 		}
 		
-		public function makeWhere(){
+		protected function makeWhere(){
 			$where='';
 			
 			if(!empty($this->wheres)){

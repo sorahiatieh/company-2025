@@ -9,10 +9,11 @@
 		if(!Validator::isNumber($id)){
 			throw new NotFound();
 		}
-		$blogDetails=$blog_db->getBlogDetails(array(
+		$blogDetails=$blog_db->setWheres(array(
 			"id"=>$id,
 			"enable"=>1
-		));
+		))->getDetails();
+		
 		if(empty($blogDetails)){
 			throw new NotFound();
 		}

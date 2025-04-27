@@ -29,7 +29,11 @@
 		if(!Validator::is_az09_($pagename)){
 			throw new NotFound();
 		}
-		$pageDetails=$page_db->getPageDetails($pagename);
+		
+		$pageDetails=$page_db->setWheres(array(
+			"name"=>$pagename
+		))->getDetails();
+		
 		
 		if(empty($pageDetails)){
 			throw new NotFound();
