@@ -78,13 +78,17 @@
 		protected function makeReturnFields(){
 			$output='';
 			if(!empty($this->returnFields)){
-				foreach($this->returnFields as $item){
-					$output.="`$item` ,";
+				foreach($this->returnFields as $key=>$value){
+					if(is_numeric($key))
+						$output.="`$value` ,";
+					else
+						$output.="$key as `$value` ,";
 				}
 				$output=mb_substr($output,0,mb_strlen($output)-1);
 			}else{
 				$output="*";
 			}
+			//var_dump($output);
 			return $output;
 		}
 	}

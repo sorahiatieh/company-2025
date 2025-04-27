@@ -3,7 +3,7 @@
 	
 	$items=$blog_db->setWheres(array(
 		"enable"=>1
-	))->getDetails();
+	))->getList();
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];
