@@ -8,6 +8,8 @@
 		function getSetting($name){
 			$Details=$this->setWheres(array(
 				"name"=>$name
+			))->setReturnFields(array(
+				"value"
 			))->getDetails();
 			
 			if(empty($Details)){

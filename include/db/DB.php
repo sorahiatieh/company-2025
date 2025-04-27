@@ -2,6 +2,7 @@
 	class DB {
 		private $wheres=array();
 		protected $table_name='';
+		private $returnFields=array();
 		public function is(){
 			global $mysqli;
 			
@@ -18,8 +19,10 @@
 		public function getDetails(){
 			global $mysqli;
 			$where=$this->makeWhere();
+			$returnFields=$this->makeReturnFields();
 			
-			$q="select * from ".$this->table_name." $where";
+			$q="select $returnFields from ".$this->table_name." $where";
+			
 			$result=$mysqli->query($q) or die($mysqli->error);
 			$field=$result->fetch_assoc();
 			
@@ -53,6 +56,10 @@
 			return $this;
 		}
 		
+		public function setReturnFields($fields){
+			 $this->returnFields = $fields;
+			 return $this;
+		}
 		protected function makeWhere(){
 			$where='';
 			
@@ -66,5 +73,18 @@
 			}
 			
 			return $where;
+		}
+		
+		protected function makeReturnFields(){
+			$output='';
+			if(!empty($this->returnFields)){
+				foreach($this->returnFields as $item){
+					$output.="`$item` ,";
+				}
+				$output=mb_substr($output,0,mb_strlen($output)-1);
+			}else{
+				$output="*";
+			}
+			return $output;
 		}
 	}
