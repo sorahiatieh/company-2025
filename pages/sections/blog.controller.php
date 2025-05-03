@@ -3,6 +3,10 @@
 	
 	$items=$blog_db->setWheres(array(
 		"enable"=>1
+	))->setReturnFields(array(
+		"id",
+		"title",
+		"text"
 	))->getList();
 	
 	for($i=0;$i<count($items);$i++){

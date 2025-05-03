@@ -1,6 +1,7 @@
 <?php
 	defined("_AST") or die("Access denied");
     $CP=Base::getData("blog");
+    $blog_db=new DB_BLOG();
 ?>
  <div class="container cont-blog">
      <div class="row">
@@ -18,21 +19,22 @@
      <div class="b-content">
          <?php
              foreach($CP['Items'] as $item){
+                 $link=$blog_db->getURLWithTitle($item['id'],$item['title']);
          ?>
          <div class="item row">
              <div class="col-md-4">
-                 <a href="blog/<?= $item['id'].text2url($item['title']); ?>">
+                 <a href="<?= $link; ?>">
                      <img src="<?= $item['ImageURL']; ?>" class="img-responsive img-hover img-border wp-post-image" alt="<?= $item['title']; ?>">
                  </a>
              </div>
              <div class="col-md-8">
-                 <h3><a href="blog/<?= $item['id'].text2url($item['title']); ?>"><?= $item['title']; ?></a></h3>
+                 <h3><a href="blog/<?= $link; ?>"><?= $item['title']; ?></a></h3>
 	             <?php
 		             $text=nl2br(strip_tags($item['text']));
 		             echo trim(mb_substr($text,0,150));
 	             ?>...
                  <p></p>
-                 <a href="blog/<?= $item['id'].text2url($item['title']); ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
+                 <a href="blog/<?= $link; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
              </div>
          </div>
          <?php

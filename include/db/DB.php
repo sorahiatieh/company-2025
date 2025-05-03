@@ -39,7 +39,10 @@
 			if($count!=0){
 				$limit="LIMIT {$count}";
 			}
-			$q="select * from ".$this->table_name." $where ORDER BY `date` DESC $limit";
+			
+			$returnFields=$this->makeReturnFields();
+			
+			$q="select $returnFields from ".$this->table_name." $where ORDER BY `date` DESC $limit";
 			
 			$output=array();
 			$result = $mysqli->query($q);
