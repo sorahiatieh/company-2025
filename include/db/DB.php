@@ -1,57 +1,69 @@
 <?php
 	class DB {
+		private static $mysqli=null;
 		private $wheres=array();
 		protected $table_name='';
 		private $returnFields=array();
-		public function is(){
-			global $mysqli;
+		private $limit=array(
+			"Start"=>0,
+			"Count"=>0
+		);
+		private $orderby=array();
+		
+		private $sql="";
+		private $last_command="";
+		private $result=null;
+		
+		public static function setConnection($conn){
+			self::$mysqli=$conn;
+		}
+		public function query(){
+			$handle=fopen("a.text","a");
+				fwrite($handle,$this->sql."\r\n\r\n\r\n");
+			fclose($handle);
 			
+			$this->result=self::$mysqli->query($this->sql);
+		}
+		public function is(){
 			$where=$this->makeWhere();
 			
 			$q="SELECT EXISTS(SELECT 1 FROM ".$this->table_name." $where)";
 			
-			$result=$mysqli->query($q) or die($mysqli->error);
+			$result=self::$mysqli->query($q) or die(self::$mysqli->error);
 			$row=$result->fetch_row();
 			
 			return (bool) $row[0];
 		}
 		
 		public function getDetails(){
-			global $mysqli;
-			$where=$this->makeWhere();
-			$returnFields=$this->makeReturnFields();
+			$Details=$this->setLimit(1)->getList();
 			
-			$q="select $returnFields from ".$this->table_name." $where";
+			if(count($Details)==0)
+				return null;
 			
-			$result=$mysqli->query($q) or die($mysqli->error);
-			$field=$result->fetch_assoc();
-			
-			$result->free_result();
-			
-			return $field;
+			return $Details[0];
 		}
 		
-		public function getList($count=0){
-			global $mysqli;
-			$where=$this->makeWhere();
-			
-			$limit="";
-			if($count!=0){
-				$limit="LIMIT {$count}";
-			}
-			
+		public function getList(){
 			$returnFields=$this->makeReturnFields();
+			$where=$this->makeWhere();
+			$limit=$this->makeLimit();
+			$orderby=$this->makeOrderBy();
 			
-			$q="select $returnFields from ".$this->table_name." $where ORDER BY `date` DESC $limit";
+			$q="select $returnFields from ".$this->table_name." $where $orderby $limit";
 			
-			$output=array();
-			$result = $mysqli->query($q);
+			$this->sql=$q;
+			$this->last_command='LIST';
+			
+			return $this;
+			/*$output=array();
+			$result = self::$mysqli->query($q) or die(self::$mysqli->error);
 			while($fields=$result->fetch_assoc()){
 				$output[]=$fields;
 			}
 			$result->free_result();
 			
-			return $output;
+			return $output;*/
 		}
 		public function setWheres($wheres=array()){
 			$this->wheres=$wheres;
@@ -63,7 +75,42 @@
 			 $this->returnFields = $fields;
 			 return $this;
 		}
-		protected function makeWhere(){
+		
+		public function setLimit($count,$page_number=1){
+			if($page_number <1)
+				$page_number=1;
+			
+			if($count==0){
+				$this->limit=array(
+					"Start"=>0,
+					"Count"=>0
+				);
+			}else{
+				$this->limit=array(
+					"Start"=>($page_number-1)*$count,
+					"Count"=>$count
+				);
+			}
+			return $this;
+		}
+		
+		public function setOrderby($list){
+			$this->orderby=$list;
+			
+			return $this;
+		}
+		private function makeLimit(){
+			$output="";
+			if($this->limit["Count"]==0)
+				$output='';
+			elseif($this->limit['Start']==0)
+				$output='LIMIT '.$this->limit['Count'];
+			else
+				$output='LIMIT '.$this->limit['Start'].','.$this->limit['Count'];
+			
+			return $output;
+		}
+		private function makeWhere(){
 			$where='';
 			
 			if(!empty($this->wheres)){
@@ -78,7 +125,7 @@
 			return $where;
 		}
 		
-		protected function makeReturnFields(){
+		private function makeReturnFields(){
 			$output='';
 			if(!empty($this->returnFields)){
 				foreach($this->returnFields as $key=>$value){
@@ -92,6 +139,21 @@
 				$output="*";
 			}
 			//var_dump($output);
+			return $output;
+		}
+		
+		private function makeOrderBy(){
+			$output='';
+			
+			if(!empty($this->orderby)){
+				$output='ORDER BY ';
+				
+				foreach($this->orderby as $key=>$value){
+					$output.="`$key` $value,";
+				}
+				$output=mb_substr($output,0,mb_strlen($output)-1);
+			}
+			
 			return $output;
 		}
 	}

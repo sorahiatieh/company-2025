@@ -28,13 +28,13 @@
                  </a>
              </div>
              <div class="col-md-8">
-                 <h3><a href="blog/<?= $link; ?>"><?= $item['title']; ?></a></h3>
+                 <h3><a href="<?= $link; ?>"><?= $item['title']; ?></a></h3>
 	             <?php
 		             $text=nl2br(strip_tags($item['text']));
 		             echo trim(mb_substr($text,0,150));
 	             ?>...
                  <p></p>
-                 <a href="blog/<?= $link; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
+                 <a href="<?= $link; ?>" class="btn btn-primary pull-left">مشاهده مطلب</a>
              </div>
          </div>
          <?php

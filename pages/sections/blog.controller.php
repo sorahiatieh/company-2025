@@ -7,6 +7,8 @@
 		"id",
 		"title",
 		"text"
+	))->setLimit(3)->setOrderby(array(
+		"date"=>"DESC"
 	))->getList();
 	
 	for($i=0;$i<count($items);$i++){

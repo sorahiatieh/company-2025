@@ -1,0 +1,96 @@
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='blog'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='$page'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='blog'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='$page'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='blog'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='$page'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='blog'
+
+
+select start as `0` ,count as `10`  from tbl_pages WHERE `name`='$page'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select * from tbl_pages WHERE `name`='blog'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select * from tbl_pages WHERE `name`='blog'
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'
+
+
+select * from tbl_pages WHERE `name`='blog'
+
+

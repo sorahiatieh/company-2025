@@ -8,6 +8,8 @@
 	if($mysqli->connect_errno)
 	    die("Error in connect DB");
 	
+	
 	$mysqli->set_charset('utf8');
+	DB::setConnection($mysqli);
 	mb_internal_encoding("UTF-8");
 ?>
