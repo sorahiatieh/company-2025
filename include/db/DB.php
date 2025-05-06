@@ -37,6 +37,15 @@
 					
 					return $output;
 				break;
+				case "SELECT_ONE":
+					$fields=$result->fetch_assoc();
+					return $fields;
+					break;
+					
+				case "SELECT_FUNC":
+					$rows=$result->fetch_row();
+					return $rows[0];
+					break;
 			}
 			
 		}
@@ -55,9 +64,18 @@
 			return (bool) $row[0];
 		}
 		
+		public function getCount(){
+			$where=$this->makeWhere();
+			$q="SELECT count(1) FROM ".$this->table_name." $where";
+			
+			$this->sql=$q;
+			$this->last_command="SELECT_FUNC";
+			
+			return $this;
+		}
 		public function getDetails(){
 			$this->setLimit(1)->getList()->run();
-			$this->last_command="SELECT ONE";
+			$this->last_command="SELECT_ONE";
 			
 			return $this;
 			/*if(count($Details)==0)

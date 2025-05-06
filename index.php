@@ -1,7 +1,19 @@
 <?php
     define("_AST",1);
     require "include/inc.php";
+    /*$blog_db=new DB_BLOG();
+    $list=$blog_db->setWheres(array(
+            "enable"=>1
+    ))->setLimit(10)->setReturnFields(array(
+            "id",
+        "title"
+    ))->setOrderby(array(
+            "date"=>"DESC",
+        "id"=>"ASC"
+    ))->getCount()->getSQL();
     
+    var_dump($list);
+    exit;*/
    require  PAGE_PATH.'controller.php';
 ?>
 <!DOCTYPE html>
