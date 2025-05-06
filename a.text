@@ -94,3 +94,33 @@ select `value`  from tbl_settings WHERE `name`='site_description'
 select * from tbl_pages WHERE `name`='blog'
 
 
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+

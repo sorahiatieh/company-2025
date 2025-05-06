@@ -22,7 +22,27 @@
 				fwrite($handle,$this->sql."\r\n\r\n\r\n");
 			fclose($handle);
 			
-			$this->result=self::$mysqli->query($this->sql);
+			return self::$mysqli->query($this->sql);
+		}
+		
+		public function run(){
+			$result=$this->query();
+			switch($this->last_command){
+				case "LIST":
+					$output=array();
+					while($fields=$result->fetch_assoc()){
+						$output[]=$fields;
+					}
+					$result->free_result();
+					
+					return $output;
+				break;
+			}
+			
+		}
+		
+		public function getSQL(){
+			return $this->sql;
 		}
 		public function is(){
 			$where=$this->makeWhere();
@@ -36,12 +56,14 @@
 		}
 		
 		public function getDetails(){
-			$Details=$this->setLimit(1)->getList();
+			$this->setLimit(1)->getList()->run();
+			$this->last_command="SELECT ONE";
 			
-			if(count($Details)==0)
+			return $this;
+			/*if(count($Details)==0)
 				return null;
 			
-			return $Details[0];
+			return $Details[0];*/
 		}
 		
 		public function getList(){
@@ -56,14 +78,7 @@
 			$this->last_command='LIST';
 			
 			return $this;
-			/*$output=array();
-			$result = self::$mysqli->query($q) or die(self::$mysqli->error);
-			while($fields=$result->fetch_assoc()){
-				$output[]=$fields;
-			}
-			$result->free_result();
 			
-			return $output;*/
 		}
 		public function setWheres($wheres=array()){
 			$this->wheres=$wheres;
