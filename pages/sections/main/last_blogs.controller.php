@@ -4,6 +4,6 @@
   
   $CP['ListOfBlogs']=$blog->setWheres(array(
       "enable"=>1
-  ))->getList(4);
-  $CP['servicesBoxTitle']=$setting->getSetting('blog_title');
+  ))->setLimit(4)->getList()->run();
+  //$CP['servicesBoxTitle']=$setting->getSetting('blog_title');
 ?>

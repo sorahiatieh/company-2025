@@ -4,7 +4,7 @@
   
   $CP['ListOfServices']=$service->setWheres(array(
       "enable"=>1
-  ))->getList();
+  ))->getList()->run();
   
   $CP['servicesBoxTitle']=$setting->getSetting('service_title');
 ?>

@@ -9,7 +9,7 @@
 		"text"
 	))->setLimit(3)->setOrderby(array(
 		"date"=>"DESC"
-	))->getList();
+	))->getList()->run();
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];

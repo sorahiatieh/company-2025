@@ -10,7 +10,7 @@
 				"name"=>$name
 			))->setReturnFields(array(
 				"value"
-			))->getDetails();
+			))->getDetails()->run();
 			
 			if(empty($Details)){
 				return  '';

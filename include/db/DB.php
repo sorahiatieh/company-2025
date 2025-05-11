@@ -12,6 +12,7 @@
 		
 		private $sql="";
 		private $last_command="";
+		private $last_id=0;
 		private $result=null;
 		
 		public static function setConnection($conn){
@@ -36,7 +37,7 @@
 					$result->free_result();
 					
 					return $output;
-				break;
+					break;
 				case "SELECT_ONE":
 					$fields=$result->fetch_assoc();
 					return $fields;
@@ -46,6 +47,18 @@
 					$rows=$result->fetch_row();
 					return $rows[0];
 					break;
+				
+				case "IS":
+					$rows=$result->fetch_row();
+					return (bool) $rows[0];
+					break;
+					
+				case "UPDATE":
+					break;
+					
+				case "INSERT":
+					return self::$mysqli->insert_id;
+					break;
 			}
 			
 		}
@@ -53,15 +66,22 @@
 		public function getSQL(){
 			return $this->sql;
 		}
+		public function getLastID(){
+			return self::$mysqli->insert_id;
+		}
 		public function is(){
 			$where=$this->makeWhere();
 			
 			$q="SELECT EXISTS(SELECT 1 FROM ".$this->table_name." $where)";
 			
-			$result=self::$mysqli->query($q) or die(self::$mysqli->error);
+			$this->sql=$q;
+			$this->last_command="IS";
+			
+			return $this;
+			/*$result=self::$mysqli->query($q) or die(self::$mysqli->error);
 			$row=$result->fetch_row();
 			
-			return (bool) $row[0];
+			return (bool) $row[0];*/
 		}
 		
 		public function getCount(){
@@ -97,6 +117,47 @@
 			
 			return $this;
 			
+		}
+		
+		public function update($details){
+			$where=$this->makeWhere();
+			$limit=$this->makeLimit();
+			$values="";
+			foreach($details as $key=>$value){
+				$values.="`$key`='$value',";
+			}
+			if($values!="")
+				$values=mb_substr($values,0,mb_strlen($values)-1);
+			
+			$this->sql="UPDATE ".$this->table_name." SET $values $where $limit";
+			$this->last_command='UPDATE';
+			
+			return $this;
+		}
+		public function insert($details){
+			$fields="";
+			$values="";
+			
+			foreach($details as $key=>$value){
+				$fields.="`$key`,";
+				$values.="'$value',";
+			}
+			
+			if($fields!=""){
+				$fields=mb_substr($fields,0,mb_strlen($fields)-1);
+				$values=mb_substr($values,0,mb_strlen($values)-1);
+			}
+			
+			$this->sql="INSERT INTO ".$this->table_name." ($fields) VALUES ($values)";
+			return $this;
+		}
+		public function delete(){
+			$where=$this->makeWhere();
+			$limit=$this->makeLimit();
+			$this->sql="DELETE FROM ".$this->table_name." $where $limit";
+			$this->last_command="DELETE";
+			
+			return $this;
 		}
 		public function setWheres($wheres=array()){
 			$this->wheres=$wheres;

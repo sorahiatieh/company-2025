@@ -11,7 +11,7 @@
 				"id"=>$id
 			))->setReturnFields(array(
 				"title",
-			))->getDetails();
+			))->getDetails()->run();
 			
 			if(empty($Details))
 				return "blog/".$id;

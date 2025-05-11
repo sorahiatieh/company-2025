@@ -8,7 +8,7 @@
 	
 	$projectDetails=$project_db->setWheres(array(
 		"id"=>$id
-	))->getDetails();
+	))->getDetails()->run();
 	
 	if(empty($projectDetails))
 		throw new NotFound();

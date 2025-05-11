@@ -12,7 +12,7 @@
 		$blogDetails=$blog_db->setWheres(array(
 			"id"=>$id,
 			"enable"=>1
-		))->getDetails();
+		))->getDetails()->run();
 		
 		if(empty($blogDetails)){
 			throw new NotFound();

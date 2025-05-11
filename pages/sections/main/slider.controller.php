@@ -10,5 +10,5 @@
   
   $CP['ListOfSliders']=$slidere->setWheres(array(
       "enable"=>1
-  ))->getList();
+  ))->getList()->run();
 ?>

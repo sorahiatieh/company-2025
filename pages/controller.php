@@ -32,7 +32,7 @@
 		
 		$pageDetails=$page_db->setWheres(array(
 			"name"=>$pagename
-		))->getDetails();
+		))->getDetails()->run();
 		
 		
 		if(empty($pageDetails)){

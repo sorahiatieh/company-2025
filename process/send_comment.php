@@ -40,7 +40,7 @@
         exit(json_encode($output));
     }
 	
-	$Details=$blog_db->getDetails($blog_id);
+	$Details=$blog_db->getDetails($blog_id)->run();
 	if ($Details['can_comment']==0)
     {
         $output['Text']="شرمنده اخلاق ورزشی تون :)";

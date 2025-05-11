@@ -4,7 +4,7 @@
 	
 	$items=$portfolio_db->setWheres(array(
 		"enable"=>1
-	))->getList(10);
+	))->setLimit(8)->getList(10)->run();
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];

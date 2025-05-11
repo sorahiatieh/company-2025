@@ -4,7 +4,7 @@
 		function getLinkTitle($pagename){
 			$PageDetails = $this->setWheres(array(
 				"name"=>$pagename
-			))->getDetails();
+			))->getDetails()->run();
 			
 			if(empty($PageDetails)){
 				return "";
