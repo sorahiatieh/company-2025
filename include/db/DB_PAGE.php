@@ -13,6 +13,6 @@
 		}
 		
 		function getURL($page){
-			return 'pages/'.$page.text2url($this->getLinkTitle('$page'));
+			return 'pages/'.$page.text2url($this->getLinkTitle($page));
 		}
 	}

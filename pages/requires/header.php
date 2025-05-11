@@ -19,7 +19,8 @@
                 <ul id="menu-mine-menu" class="nav navbar-nav navbar-left menu"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7">
                     <li class="active"><a href="index.php">خانه</a></li>
                     <li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17">
-                        <a href="<?= $page->getURL('blog'); ?>">بلاگ</a>
+                       <!-- <a href="<?php /*= $page->getURL('blog'); */?>">بلاگ</a>-->
+                        <a href="blog/">بلاگ</a>
                     </li>
                     <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66">
                         <a href="<?= $page->getURL('gallery'); ?>">گالری تصاویر</a>

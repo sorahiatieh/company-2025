@@ -4,6 +4,7 @@
 	Base::setData("gallery",$CP);
 	
 	Head::addStylesheet("assets/css/lightgallery.css","screen");
+	Head::addStylesheet("assets/css/nivo-slider.css");
 	
 	
 	Head::addScript("assets/js/lightgallery.min.js");

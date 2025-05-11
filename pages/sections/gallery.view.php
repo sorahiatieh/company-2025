@@ -1,5 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
+    $CP=Base::getData("gallery");
 ?>
 <div class="container cont-blog">
    <div class="row">
@@ -17,18 +18,17 @@
    <div class="row">
        <div class="col-lg-12 col-xs-12">
            <div class="gallery-image">
-            <div id="lightgallery">
+               <div id="slider" class="nivoSlider">
                 <?php
-                    for($i=1; $i<16; $i++){
+	                foreach($CP as $item){
                 ?>
-                <a class="col-lg-3 col-sm-3 col-xs-3" href="assets/img/gallery/<?= $i; ?>.jpg">
-                    <img src="assets/img/gallery/<?= $i; ?>.jpg" />
+                <a class="col-lg-3 col-sm-3 col-xs-3" href="assets/img/gallery/<?= $item['id']; ?>.jpg">
+                    <img src="assets/img/gallery/<?= $item['id']; ?>.jpg" />
                 </a>
                 <?php
                     }
                 ?>
-                
-            </div>
+                </div>
           </div>
        </div>
    </div>
