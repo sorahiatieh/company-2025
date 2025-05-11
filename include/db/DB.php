@@ -23,7 +23,8 @@
 				fwrite($handle,$this->sql."\r\n\r\n\r\n");
 			fclose($handle);
 			
-			return self::$mysqli->query($this->sql);
+			$result=self::$mysqli->query($this->sql) or self::$mysqli->error();
+			return $result;
 		}
 		
 		public function run(){
@@ -94,7 +95,7 @@
 			return $this;
 		}
 		public function getDetails(){
-			$this->setLimit(1)->getList()->run();
+			$this->setLimit(1)->getList();
 			$this->last_command="SELECT_ONE";
 			
 			return $this;
