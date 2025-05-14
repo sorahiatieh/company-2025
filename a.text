@@ -5821,3 +5821,984 @@ select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
 select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
 
 
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='projects'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `enable`='1'  LIMIT 8
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='projects'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `enable`='1'  LIMIT 8
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='show_project'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `id`='2'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='projects'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `enable`='1'  LIMIT 8
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='show_project'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `id`='2'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='projects'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `enable`='1'  LIMIT 8
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='gallery'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='about'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='contact'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_menus WHERE `enable`='1' ORDER BY `sort` ASC,`title` ASC 
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_menus WHERE `enable`='1' ORDER BY `sort` ASC,`title` ASC 
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_menus WHERE `enable`='1' ORDER BY `sort` ASC,`title` ASC 
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_menus WHERE `enable`='1' ORDER BY `sort` ASC,`title` ASC 
+
+
+select * from tbl_pages WHERE `name`='projects'  LIMIT 1
+
+
+select * from tbl_portfolioes WHERE `enable`='1'  LIMIT 8
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+

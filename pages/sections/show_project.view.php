@@ -32,10 +32,10 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item portfolio-gallery active">
-                            <img class="img-responsive" src="assets/img/portfolio/4.jpg" width="750" alt="">
+                            <img class="img-responsive" src="assets/img/gallery/4.jpg" width="750" alt="">
                         </div>
                         <div class="item portfolio-gallery">
-                             <img class="img-responsive" src="assets/img/portfolio/1.jpg" width="750" alt="">
+                             <img class="img-responsive" src="assets/img/gallery/1.jpg" width="750" alt="">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -66,7 +66,7 @@
                    for($i=0; $i<4; $i++){
                ?>
                <div class="col-sm-3 col-xs-6 item">
-                   <a href="seven-index.php">
+                   <a href="#">
                        <img src="assets/img/portfolio/<?= $i ?>.jpg" alt="">
                    </a>
                </div>
