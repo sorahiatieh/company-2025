@@ -5,6 +5,12 @@
 	))->setOrderby(array(
 		"sort"=>"ASC",
 		"title"=>"ASC"
+	))->setReturnFields(array(
+		"parent_id",
+		"title",
+		"target_type",
+		"target",
+		"new_window"
 	))->getList()->run();
 	
 	for($i=0;$i<count($ListOfMenus);$i++){
