@@ -25,13 +25,13 @@
 			if($pageDetails['custom_url']!="")
 				$item['URL']=$pageDetails['custom_url'];
 			else
-				$item['URL']=$page_db->getURL($item['target']);
+				$item['URL']=$page_db->getURLWithTitle($item['target'],$pageDetails['link_title']);
 			//$item['PageDetails']=$pageDetails;
 		}
 		
 		
 		$item['Active']=0;
-		if(Base::getPageName()==$item['target'] || $item['target']=='main')
+		if(Base::getPageName()==$item['target'] )
 			$item['Active']=1;
 		
 		$ListOfMenus[$i]=$item;

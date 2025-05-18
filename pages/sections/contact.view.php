@@ -1,6 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
-	$CP=Base::getData("contact");
+	Base::getData("contact");
 ?>
  <div class="container cont-blog">
      <div class="row">
@@ -21,7 +21,7 @@
              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fa"></script><script src="http://kharido.ir/OtherPage/GoogleMapsInYourSite.js.aspx?idObjectMap=69648" type="text/javascript"></script>  <div id="map_canvas" style="width:500px; height:500px; "> <a href="http://kharido.ir">آگهی دادن</a> </div>
          </div>
          <div class="col-md-4">
-             <?= $CP['text']; ?>
+             <?= $pageDetails['text']; ?>
              
          </div>
      </div>

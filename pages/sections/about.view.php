@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <img src="assets/img/1.jpg" alt="">
+            
             <?= $CP['text']; ?>
         </div>
     </div>
