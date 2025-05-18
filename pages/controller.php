@@ -16,15 +16,7 @@
 	Head::addStylesheet("assets/css/font-awesome.min.css");
 	Head::addStylesheet("assets/css/style.min.css");
 	
-	$menu=new DB_MENU();
-	$ListOfMenus=$menu->setWheres(array(
-		"enable"=>1
-	))->setOrderby(array(
-		"sort"=>"ASC",
-		"title"=>"ASC"
-	))->getList()->run();
 	
-	Base::setData("_menus",$ListOfMenus);
 	
 	if(!isset($_GET['page']))
 		$_GET['page']="main";
@@ -78,7 +70,7 @@
 		Base::setPageName("404");
 	}
 	
-	
+	require "pages/requires/header.controller.php";
 	/*echo "<pre>";
 	print_r(Base::$data);
 	echo "</pre>";

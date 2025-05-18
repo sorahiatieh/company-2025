@@ -22,7 +22,7 @@
 <body>
    <div class="header">
        <?php
-        require "pages/requires/header.php";
+        require "pages/requires/header.view.php";
        ?>
     </div>
  

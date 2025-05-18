@@ -21,9 +21,10 @@
                 <ul id="menu-mine-menu" class="nav navbar-nav navbar-left menu"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7">
                         <?php
                             foreach($ListOfMenu as $item){
+                            
                         ?>
-                    <li <?= (Base::getPageName()==$item['target']) ? ' class="active"':''; ?> >
-                        <a href="<?= $item['target']; ?>"><?= $item['title']; ?></a>
+                    <li <?= ($item['Active']) ? ' class="active"':''; ?> >
+                        <a href="<?= $item['URL']; ?>" <?= ($item['new_window']==1) ? ' target="_blank"': '' ?>><?= $item['title']; ?></a>
                     </li>
                     <?php
 	                    }
