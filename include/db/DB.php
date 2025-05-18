@@ -4,14 +4,23 @@
 		private $wheres=array();
 		protected $table_name='';
 		private $returnFields=array();
-		private $limit=array(
+		protected $limit=array(
 			"Start"=>0,
 			"Count"=>0
 		);
+		
+		const TYPE_LIST='LIST';
+		 const TYPE_SELECT_ONE='SELECT_ONE';
+		 const TYPE_SELECT_FUNC='SELECT_FUNC';
+		 const TYPE_IS='IS';
+		 const TYPE_UPDATE='UPDATE';
+		 const TYPE_INSERT='INSERT';
+		 const TYPE_DELETE='DELETE';
+		
 		private $orderby=array();
 		
 		private $sql="";
-		private $last_command="";
+		private $command_type="";
 		private $last_id=0;
 		private $result=null;
 		
@@ -29,8 +38,8 @@
 		
 		public function run(){
 			$result=$this->query();
-			switch($this->last_command){
-				case "LIST":
+			switch($this->command_type){
+				case self::TYPE_LIST:
 					$output=array();
 					while($fields=$result->fetch_assoc()){
 						$output[]=$fields;
@@ -39,25 +48,27 @@
 					
 					return $output;
 					break;
-				case "SELECT_ONE":
+				case self::TYPE_SELECT_ONE:
 					$fields=$result->fetch_assoc();
 					return $fields;
 					break;
 					
-				case "SELECT_FUNC":
+				case self::TYPE_SELECT_FUNC:
 					$rows=$result->fetch_row();
 					return $rows[0];
 					break;
 				
-				case "IS":
+				case self::TYPE_IS:
 					$rows=$result->fetch_row();
 					return (bool) $rows[0];
 					break;
 					
-				case "UPDATE":
+				case self::TYPE_UPDATE:
 					break;
 					
-				case "INSERT":
+				case self::TYPE_DELETE:
+					break;
+				case self::TYPE_INSERT:
 					return self::$mysqli->insert_id;
 					break;
 			}
@@ -66,6 +77,16 @@
 		
 		public function getSQL(){
 			return $this->sql;
+		}
+		
+		public function setSQL($q){
+			$this->sql=$q;
+			return $this;
+		}
+		
+		function setCommandType($command_type){
+			$this->command_type=$command_type;
+			return $this;
 		}
 		public function getLastID(){
 			return self::$mysqli->insert_id;
@@ -76,7 +97,8 @@
 			$q="SELECT EXISTS(SELECT 1 FROM ".$this->table_name." $where)";
 			
 			$this->sql=$q;
-			$this->last_command="IS";
+			$this->command_type=self::TYPE_IS;
+			
 			
 			return $this;
 			/*$result=self::$mysqli->query($q) or die(self::$mysqli->error);
@@ -90,13 +112,13 @@
 			$q="SELECT count(1) FROM ".$this->table_name." $where";
 			
 			$this->sql=$q;
-			$this->last_command="SELECT_FUNC";
+			$this->command_type=self::TYPE_SELECT_FUNC;
 			
 			return $this;
 		}
 		public function getDetails(){
 			$this->setLimit(1)->getList();
-			$this->last_command="SELECT_ONE";
+			$this->command_type=self::TYPE_SELECT_ONE;
 			
 			return $this;
 			/*if(count($Details)==0)
@@ -114,7 +136,7 @@
 			$q="select $returnFields from ".$this->table_name." $where $orderby $limit";
 			
 			$this->sql=$q;
-			$this->last_command='LIST';
+			$this->command_type=self::TYPE_LIST;
 			
 			return $this;
 			
@@ -131,7 +153,7 @@
 				$values=mb_substr($values,0,mb_strlen($values)-1);
 			
 			$this->sql="UPDATE ".$this->table_name." SET $values $where $limit";
-			$this->last_command='UPDATE';
+			$this->command_type=self::TYPE_UPDATE;
 			
 			return $this;
 		}
@@ -156,7 +178,7 @@
 			$where=$this->makeWhere();
 			$limit=$this->makeLimit();
 			$this->sql="DELETE FROM ".$this->table_name." $where $limit";
-			$this->last_command="DELETE";
+			$this->command_type=self::TYPE_DELETE;
 			
 			return $this;
 		}

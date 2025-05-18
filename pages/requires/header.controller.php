@@ -1,6 +1,7 @@
 <?php
 	$menu=new DB_MENU();
-	$ListOfMenus=$menu->setWheres(array(
+	$ListOfMenus=$menu->getListOfSiteMenus()->run();
+	/*$ListOfMenus=$menu->setWheres(array(
 		"enable"=>1
 	))->setOrderby(array(
 		"sort"=>"ASC",
@@ -11,8 +12,9 @@
 		"target_type",
 		"target",
 		"new_window"
-	))->getList()->run();
+	))->setLimit(0)->getList()->getSQL();*/
 	
+	$page_db=new DB_PAGE();
 	for($i=0;$i<count($ListOfMenus);$i++){
 		$item=$ListOfMenus[$i];
 		
@@ -20,19 +22,11 @@
 		if($item['target_type']=="External")
 			$item['URL']=$item['target'];
 		else{
-			$page_db=new DB_PAGE();
-			$pageDetails=$page_db->setWheres(array(
-				"name"=>$item['target']
-			))->setReturnFields(array(
-				"link_title",
-				"custom_url"
-			))->getDetails()->run();
-			
-			if($pageDetails['custom_url']!="")
-				$item['URL']=$pageDetails['custom_url'];
+			if($item['custom_url']!="")
+				$item['URL']=$item['custom_url'];
 			else
-				$item['URL']=$page_db->getURLWithTitle($item['target'],$pageDetails['link_title']);
-			//$item['PageDetails']=$pageDetails;
+				$item['URL']=$page_db->getURLWithTitle($item['target'],$item['link_title']);
+			
 		}
 		
 		
