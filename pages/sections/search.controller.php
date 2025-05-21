@@ -26,7 +26,7 @@
 	$CP['Items']=$items;
 	
 	Base::setData("blog",$CP);
-	
+	Base::setPageName("blog");
 	
 	
 	

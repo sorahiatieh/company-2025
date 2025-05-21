@@ -13999,3 +13999,279 @@ select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
 select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
 
 
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				select * from tbl_blogs
+				where (`title` LIKe '%لورم%' OR fnStripTags(`text`) LIKE  '%لورم%') AND `enable`=1
+			
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				select * from tbl_blogs
+				where (`title` LIKe '%g%' OR fnStripTags(`text`) LIKE  '%g%') AND `enable`=1
+			
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				select * from tbl_blogs
+				where (`title` LIKe '%دنیا%' OR fnStripTags(`text`) LIKE  '%دنیا%') AND `enable`=1
+			
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				select * from tbl_blogs
+				where (`title` LIKe '%لورم%' OR fnStripTags(`text`) LIKE  '%لورم%') AND `enable`=1
+			
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='search'  LIMIT 1
+
+
+
+				select * from tbl_blogs
+				where (`title` LIKe '%سلام%' OR fnStripTags(`text`) LIKE  '%سلام%') AND `enable`=1
+			
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+

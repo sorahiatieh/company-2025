@@ -57,7 +57,8 @@
 				
 				require $filename;
 			}
-			$filename=SECTIONS.$pageDetails['name'].'.view.php';
+			
+			$filename=SECTIONS.Base::getPageName().'.view.php';
 			if(Base::getIsCustomPage() && file_exists($filename)){
 				Base::setHasView(true);
 			}
