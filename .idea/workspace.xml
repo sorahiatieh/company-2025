@@ -19,6 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/include/db/DB_MENU.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php7.4.33\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -100,6 +103,7 @@
       <workItem from="1746973462235" duration="5538000" />
       <workItem from="1747209927921" duration="5387000" />
       <workItem from="1747553509791" duration="7711000" />
+      <workItem from="1747573814855" duration="7059000" />
     </task>
     <servers />
   </component>

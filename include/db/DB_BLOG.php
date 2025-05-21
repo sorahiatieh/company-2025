@@ -22,4 +22,13 @@
 		function getURLWithTitle($id,$title){
 			return 'blog/'.$id.text2url($title);
 		}
+		
+		function search($input){
+			$q="
+				select * from tbl_blogs
+				where (`title` LIKe '%$input%' OR `text` LIKE  '%$input%') AND `enable`=1
+			";
+			$this->setSQL($q)->setCommandType(DB::TYPE_LIST);
+			return $this;
+		}
 	}

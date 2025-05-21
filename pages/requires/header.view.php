@@ -6,7 +6,7 @@
     ?>
 <div class="top-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container header-site">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="icon-bar"></span>
@@ -39,8 +39,12 @@
                     </li>-->
                     
                 </ul>
-
+                
             </div>
+            <form action="pages/search" method="get">
+                <input type="text" name="search">
+                <input type="submit" value="جستجو">
+            </form>
         </div>
     </nav>
 </div>

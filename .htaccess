@@ -11,6 +11,6 @@ RewriteRule ^([a-z]+)/([0-9]+) index.php?page=show_$1&id=$2
 
 RewriteRule ^blog/ index.php?page=blog
 
-RewriteRule ^pages/([a-z]+) index.php?page=$1
+RewriteRule ^pages/([a-z]+) index.php?page=$1 [QSA]
 
 # RewriteRule ^blog/([0-9]+) index.php?page=show_blog&id=$1
