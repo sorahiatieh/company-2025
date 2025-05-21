@@ -7,7 +7,7 @@
 		"id",
 		"title",
 		"text"
-	))->setLimit(3)->setOrderby(array(
+	))->setLimit(10)->setOrderby(array(
 		"date"=>"DESC"
 	))->getList()->run();
 	

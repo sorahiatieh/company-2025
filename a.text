@@ -14275,3 +14275,91 @@ select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
 select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
 
 
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 3
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='blog'  LIMIT 1
+
+
+select `id` ,`title` ,`text`  from tbl_blogs WHERE `enable`='1' ORDER BY `date` DESC LIMIT 10
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
