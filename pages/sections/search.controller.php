@@ -30,8 +30,8 @@
 	
 	
 	
-	echo "<pre>";
+	/*echo "<pre>";
 	print_r($CP);
 	echo "</pre>";
-	exit;
+	exit;*/
 ?>
