@@ -20,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/include/db/DB_BLOG.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/include/db/DB_MENU.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php7.4.33\php.exe" />
@@ -104,6 +105,7 @@
       <workItem from="1747209927921" duration="5387000" />
       <workItem from="1747553509791" duration="7711000" />
       <workItem from="1747573814855" duration="7059000" />
+      <workItem from="1747815881216" duration="4209000" />
     </task>
     <servers />
   </component>
