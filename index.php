@@ -20,6 +20,12 @@
     ?>
 </head>
 <body>
+<!-- نوار تخفیف بالای سایت -->
+<div class="bg-dark text-white text-center py-2">
+    <div class="container">
+        <p class="m-0">با عضویت در خبرنامه، 10٪ تخفیف اولین خرید را بگیرید!</p>
+    </div>
+</div>
    <div class="header">
        <?php
         require "pages/requires/header.view.php";
