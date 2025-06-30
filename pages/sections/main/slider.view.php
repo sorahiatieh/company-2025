@@ -8,7 +8,9 @@
     <?php
 			foreach($CP['ListOfSliders'] as $item){
         ?>
+        <div class="item">
             <img src="assets/img/slider/slider-<?= $item['id']; ?>.jpg" alt="<?= $item['title']; ?>">
+        </div>
         <?php
 			}
 		?>

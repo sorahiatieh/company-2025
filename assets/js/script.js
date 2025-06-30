@@ -1,36 +1,26 @@
 //<script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
 
 $(document).ready(function(){
-    $('#lightgallery').lightGallery();
+    //$('#lightgallery').lightGallery();
 
     $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 
-        //Basic Speeds
-        slideSpeed : 200,
-        paginationSpeed : 800,
-
-        //Autoplay
-        autoPlay : false,
-        goToFirst : true,
-        goToFirstSpeed : 1000,
-
-        // Navigation
-        navigation : false,
-        navigationText : ["prev","next"],
-        pagination : true,
-        paginationNumbers: true,
-
-        // Responsive
-        responsive: true,
-        items : 5,
-        itemsDesktop : [1199,4],
-        itemsDesktopSmall : [980,3],
-        itemsTablet: [768,2],
-        itemsMobile : [479,1]
-
-    })
-   // ("#myCarousel").carousel();
-
+/*
 // Enable Carousel Indicators
     $(".item").click(function(){
         $("#myCarousel").carousel(1);
@@ -40,9 +30,9 @@ $(document).ready(function(){
     $(".left").click(function(){
         $("#myCarousel").carousel("prev");
     });
-
+*/
     // Enable nivo slider
-    $('#slider').nivoSlider({
+    /*$('#slider').nivoSlider({
         effect:'random',
         slices: 15,
         boxCols: 8,
@@ -64,4 +54,6 @@ $(document).ready(function(){
         lastSlide:function(){},
         afterLoad:function(){}
     });
+
+     */
 });
