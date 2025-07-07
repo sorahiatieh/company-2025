@@ -1,9 +1,6 @@
 <?php
     define("_AST",1);
     require "include/inc.php";
-    /*var_dump($_GET);
-    exit;*/
-    
    require  PAGE_PATH.'controller.php';
 ?>
 <!DOCTYPE html>
@@ -21,30 +18,30 @@
 </head>
 <body>
 <!-- نوار تخفیف بالای سایت -->
-<div class="bg-dark text-white text-center py-2">
-    <div class="container">
-        <p class="m-0">با عضویت در خبرنامه، 10٪ تخفیف اولین خرید را بگیرید!</p>
+    <div class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p class="m-0">با عضویت در خبرنامه، 10٪ تخفیف اولین خرید را بگیرید!</p>
+        </div>
     </div>
-</div>
-   <div class="header">
+    <div class="header">
        <?php
         require "pages/requires/header.view.php";
        ?>
     </div>
- 
+    
     <div class="container content">
         <?php
             $page_name=Base::getPageName();
             
             if(Base::getHasView()){
-	            $filename=SECTIONS.$page_name.".view.php";
-	            require $filename;
+                $filename=SECTIONS.$page_name.".view.php";
+                require $filename;
             }else{
-	            require PAGE_PATH."public_page.php";
+                require PAGE_PATH."public_page.php";
             }
         ?>
     </div>
-    <!-- فوووووووتر-->
+        <!-- فوووووووتر-->
     <footer class="text-center">
         <?php
             require "pages/requires/footer.php";
