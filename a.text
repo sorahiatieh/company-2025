@@ -13409,3 +13409,263 @@ select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
 select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
 
 
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_keywords'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_description'  LIMIT 1
+
+
+select * from tbl_pages WHERE `name`='main'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='site_title'  LIMIT 1
+
+
+select * from tbl_sliders WHERE `enable`='1'  
+
+
+select * from tbl_services WHERE `enable`='1'  
+
+
+select `value`  from tbl_settings WHERE `name`='service_title'  LIMIT 1
+
+
+select * from tbl_portfolioes   LIMIT 4
+
+
+select * from tbl_blogs WHERE `enable`='1'  LIMIT 4
+
+
+select `value`  from tbl_settings WHERE `name`='main_why'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_slogan'  LIMIT 1
+
+
+
+				SELECT
+	                `parent_id`,
+			       	m.`title`,
+			       `target_type`,
+			       `target`,
+			       `new_window`,
+			       `link_title`,
+			       `custom_url`
+				FROM `tbl_menus` m
+					left join tbl_pages p
+					on m.`target`=p.name
+					where m.`enable`=1
+					ORDER BY `sort` ASC, m.`title` ASC
+			
+
+
+select `value`  from tbl_settings WHERE `name`='social_network'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_footer'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_address'  LIMIT 1
+
+
+select `value`  from tbl_settings WHERE `name`='main_copyright'  LIMIT 1
+
+
