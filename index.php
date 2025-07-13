@@ -7,7 +7,7 @@
    require  PAGE_PATH.'controller.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <title><?= Base::getSiteTitle(); ?></title>
