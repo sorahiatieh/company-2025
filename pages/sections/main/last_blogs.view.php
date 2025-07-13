@@ -3,7 +3,7 @@
 ?>
 <div class="row">
 	<div class="col-lg-12">
-		<h2 class="titr"><?= $CP['servicesBoxTitle']; ?></h2>
+		<h2 class="titr"><?= $CP['blogBoxTitle']; ?></h2>
 	</div>
     <?php
         foreach($CP['ListOfBlogs'] as $item){
