@@ -1,23 +1,34 @@
 <?php
 	define("_AST",1);
-	require "include/inc.php";
+	require "../include/inc.php";
 	
 ?>
 <!doctype html>
 <html lang="fa">
 <head>
+    <title>Admin</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/scss/style.scss">
+    <script src="../assets/js/jquery-3.0.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="sidebar">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto corporis cum dignissimos hic iusto labore omnis optio provident, reiciendis sequi, suscipit totam vel. Dolorem est expedita facere numquam quasi?
-</section>
-<section class="content">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dignissimos dolorem esse ipsum minima, quo repellendus sapiente soluta veritatis? Alias assumenda eveniet nisi perferendis placeat quidem quos sed similique totam!
-</section>
+<div class="main-body container-fluid">
+    <section class="col-md-3 sidebar">
+        <?php
+            require "pages/require/sidebar.php";
+        ?>
+    </section>
+    <section class="col-md-9 content">
+        <?php
+            require "pages/require/content.php";
+        ?>
+    </section>
+</div>
+
 </body>
 </html>

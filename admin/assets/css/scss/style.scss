@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+body{
+	direction: rtl;
+	font: 13px tahoma;
+
+}
+.main-body{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+
+	.sidebar{
+		border: 1px solid #000;
+		height: 100%;
+
+		.main-menu{
+			li{
+				border-bottom: 1px solid #000;
+				padding: 5px;
+				margin-bottom: 5px;
+
+				a{
+					padding: 5px;
+				}
+			}
+		}
+	}
+	.content{
+		border: 1px solid #000;
+
+	}
+}
