@@ -28,10 +28,6 @@
 			self::$mysqli=$conn;
 		}
 		public function query(){
-			$handle=fopen("a.text","a");
-				fwrite($handle,$this->sql."\r\n\r\n\r\n");
-			fclose($handle);
-			
 			$result=self::$mysqli->query($this->sql) or self::$mysqli->error();
 			return $result;
 		}
