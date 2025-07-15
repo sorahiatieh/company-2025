@@ -3,6 +3,11 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+a,
+a:hover{
+	color: #000;
+	text-decoration: none;
+}
 html,body{
 	height: 100%;
 }
@@ -16,18 +21,38 @@ body{
 	flex-wrap: wrap;
 	height: 100%;
 
+	.header{
+		border: 1px solid #000;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px;
+		text-align: center;
+		font-weight: bold;
+	}
 	.sidebar{
 		border: 1px solid #000;
 		height: 100%;
 
 		.main-menu{
+			margin-top: 10px;
+
 			li{
-				border-bottom: 1px solid #000;
+				display: block;
+				border-bottom: 1px solid #cdc7c7;
 				padding: 5px;
 				margin-bottom: 5px;
 
 				a{
+					display: block;
 					padding: 5px;
+				}
+				&:hover,
+				&.active{
+					background-color: #000000;
+
+					a{
+						color: #fff;
+					}
 				}
 			}
 		}
@@ -36,4 +61,12 @@ body{
 		border: 1px solid #000;
 
 	}
+}
+
+.box{
+	position: absolute;
+	inset: 0;
+	margin:auto;
+	width: 400px;
+	height: 400px;
 }

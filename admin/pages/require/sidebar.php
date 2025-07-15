@@ -1,5 +1,5 @@
 <ul class="main-menu list-unstyled">
-    <li><a href="#">داشبورد</a></li>
+    <li class="active"><a href="#">داشبورد</a></li>
     <li><a href="#">مدیریت مطالب</a></li>
     <li><a href="#">مدیریت محصولات</a></li>
     <li><a href="#">مدیریت پیام ها</a></li>

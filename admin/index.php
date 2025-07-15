@@ -2,6 +2,10 @@
 	define("_AST",1);
 	require "../include/inc.php";
 	
+    if(!isset($_SESSION['userLogin'])){
+        header("Location: login.php");
+        exit;
+    }
 ?>
 <!doctype html>
 <html lang="fa">
@@ -18,6 +22,9 @@
 </head>
 <body>
 <div class="main-body container-fluid">
+    <div class="header col-md-12">
+        فلانی به پنل ادمین خوش آمدید.
+    </div>
     <section class="col-md-3 sidebar">
         <?php
             require "pages/require/sidebar.php";
