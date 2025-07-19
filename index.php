@@ -26,7 +26,7 @@
        ?>
     </div>
  
-    <div class="container content">
+    <div class="content">
         <?php
             $page_name=Base::getPageName();
             
