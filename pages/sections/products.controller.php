@@ -1,17 +1,17 @@
 <?php
 	$CP=array();
-	$portfolio_db=new DB_PORTFOLIO();
+	$product_db=new DB_PRODUCT();
 	
-	$items=$portfolio_db->setWheres(array(
+	$items=$product_db->setWheres(array(
 		"enable"=>1
 	))->setLimit(8)->getList(10)->run();
 	
 	for($i=0;$i<count($items);$i++){
 		$item=$items[$i];
 		
-		$item['ImageURL']="assets/img/portfolio/no-pic.jpg";
-		if(file_exists(dirname(__FILE__).'/../../assets/img/portfolio/'.$item['id'].'.jpg')){
-			$item['ImageURL']="assets/img/portfolio/".$item['id'].'.jpg';
+		$item['ImageURL']="assets/img/product/no-pic.jpg";
+		if(file_exists(dirname(__FILE__).'/../../assets/img/product/'.$item['id'].'.jpg')){
+			$item['ImageURL']="assets/img/product/".$item['id'].'.jpg';
 		}
 		
 		
@@ -19,10 +19,10 @@
 	}
 	
 	
-	Base::setPageDetails("title",count($items)." پروژه آخر");
+	Base::setPageDetails("title",count($items)." محصول آخر");
 	$CP['Items']=$items;
 	
-	Base::setData("projects",$CP);
+	Base::setData("products",$CP);
 	
 	
 	/*	echo "<pre>";
