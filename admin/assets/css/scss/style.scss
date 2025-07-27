@@ -36,23 +36,34 @@ body{
 		.main-menu{
 			margin-top: 10px;
 
-			li{
+			>li{
 				display: block;
 				border-bottom: 1px solid #cdc7c7;
 				padding: 5px;
 				margin-bottom: 5px;
 
-				a{
+				>a{
 					display: block;
 					padding: 5px;
 				}
-				&:hover,
-				&.active{
+				>&:hover,
+				>&.active{
 					background-color: #000000;
 
-					a{
+					>a{
 						color: #fff;
 					}
+				}
+
+				ul{
+					padding-right: 1rem;
+
+					li{
+						list-style: circle;
+						padding: 5px;
+						margin-bottom: 5px;
+					}
+
 				}
 			}
 		}
