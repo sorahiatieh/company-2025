@@ -1,6 +1,6 @@
 <ul class="main-menu list-unstyled">
     <li class="active"><a href="index.php">داشبورد</a></li>
-    <li><a href="?page=texts&sub=news">مدیریت مطالب</a>
+    <li><a href="#">مدیریت مطالب</a>
         <ul class="list-unstyled">
             <li>
                 <a href="?page=texts&sub=news">اخبار</a>
@@ -10,13 +10,13 @@
             </li>
         </ul>
     </li>
-    <li><a href="?page=products&sub=manage_products">مدیریت محصولات</a>
+    <li><a href="#">مدیریت محصولات</a>
         <ul class="list-unstyled">
             <li>
-                <a href="?page=texts&sub=news">لیست محصولات</a>
+                <a href="?page=products&sub=manage_products">لیست محصولات</a>
             </li>
             <li>
-                <a href="?page=texts&sub=pages">گروه بندی</a>
+                <a href="?page=products&sub=manage_groups">گروه بندی</a>
             </li>
         </ul>
     </li>

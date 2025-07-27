@@ -48,15 +48,16 @@ body{
 				}
 				>&:hover,
 				>&.active{
-					background-color: #000000;
 
 					>a{
 						color: #fff;
+						background-color: #000000;
 					}
 				}
 
 				ul{
 					padding-right: 1rem;
+					display: none;
 
 					li{
 						list-style: circle;
@@ -64,6 +65,13 @@ body{
 						margin-bottom: 5px;
 					}
 
+				}
+				>&.active{
+					ul{
+						a{
+							display: inherit;
+						}
+					}
 				}
 			}
 		}
