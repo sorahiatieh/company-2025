@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#frmLogin").on("submit",function (e){
+	$("#frmLogin").onsubmit(function (e){
 		e.preventDefault();
 
 		$("#loading").html('<img src="assets/img/loading.gif">');
@@ -13,6 +13,8 @@ $(document).ready(function(){
 			},
 			dataType: 'json',
 			success:function($result){
+				$("#loading").html();
+
 				if($result.Status==1){
 					alert($result.Text);
 					document.location="index.php";

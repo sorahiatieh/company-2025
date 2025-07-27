@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/process/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/process/login.php" afterDir="false" />
+    <list default="true" id="545ed22f-18c1-46c4-909b-f8ead0e94641" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fashion-shop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/require/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/require/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sections/main/product.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sections/main/product.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sections/products.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sections/products.view.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,40 +28,33 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../company-2025\exportToHTML" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/include/db/DB_MENU.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php7.4.33\php.exe" />
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2t70u1pxJxmatA5qJLQUwS4tuq8" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="30Rv3BH0eBiQa8neWsfG6z5txG3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,65 +66,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f761b74-d9e5-40ff-95b3-52ee51562968" name="Changes" comment="" />
-      <created>1739688025070</created>
+      <changelist id="545ed22f-18c1-46c4-909b-f8ead0e94641" name="Changes" comment="" />
+      <created>1753602997299</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739688025070</updated>
-      <workItem from="1739688026135" duration="9344000" />
-      <workItem from="1739713658953" duration="7295000" />
-      <workItem from="1739778197626" duration="4563000" />
-      <workItem from="1739859909833" duration="643000" />
-      <workItem from="1739860576460" duration="229000" />
-      <workItem from="1739956911375" duration="2501000" />
-      <workItem from="1740064910439" duration="5753000" />
-      <workItem from="1740291925438" duration="10092000" />
-      <workItem from="1740323886727" duration="3179000" />
-      <workItem from="1740496342925" duration="5745000" />
-      <workItem from="1740815549901" duration="5129000" />
-      <workItem from="1740837463671" duration="7759000" />
-      <workItem from="1741069594218" duration="9449000" />
-      <workItem from="1741103270718" duration="903000" />
-      <workItem from="1741425755409" duration="924000" />
-      <workItem from="1741449616499" duration="961000" />
-      <workItem from="1741676137787" duration="1416000" />
-      <workItem from="1742116740458" duration="1691000" />
-      <workItem from="1742218694068" duration="7367000" />
-      <workItem from="1742887593355" duration="7622000" />
-      <workItem from="1743839887227" duration="5667000" />
-      <workItem from="1743864003264" duration="10139000" />
-      <workItem from="1744095821755" duration="9939000" />
-      <workItem from="1744127143090" duration="3300000" />
-      <workItem from="1744552766585" duration="7714000" />
-      <workItem from="1744727530609" duration="389000" />
-      <workItem from="1744787253739" duration="5468000" />
-      <workItem from="1744813318381" duration="7479000" />
-      <workItem from="1745130710450" duration="9672000" />
-      <workItem from="1745162041445" duration="4589000" />
-      <workItem from="1745736307269" duration="8463000" />
-      <workItem from="1745763282720" duration="2314000" />
-      <workItem from="1746282136535" duration="4589000" />
-      <workItem from="1746513259489" duration="9152000" />
-      <workItem from="1746542216403" duration="4144000" />
-      <workItem from="1746628963852" duration="703000" />
-      <workItem from="1746944708770" duration="10012000" />
-      <workItem from="1746973462235" duration="5538000" />
-      <workItem from="1747209927921" duration="5387000" />
-      <workItem from="1747553509791" duration="7711000" />
-      <workItem from="1747573814855" duration="7059000" />
-      <workItem from="1752417181719" duration="5084000" />
-      <workItem from="1752562165086" duration="6873000" />
-      <workItem from="1752572425942" duration="118000" />
-      <workItem from="1752916644334" duration="1760000" />
-      <workItem from="1752935657418" duration="3605000" />
+      <updated>1753602997299</updated>
+      <workItem from="1753602998394" duration="1801000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -1,3 +1,12 @@
+<?php
+	define("_AST",1);
+    require "../include/inc.php";
+    
+    if(isset($_SESSION['userLogin'])){
+        header("location:index.php");
+        exit;
+    }
+?>
 <!doctype html>
 <html lang="fa">
 <head>
