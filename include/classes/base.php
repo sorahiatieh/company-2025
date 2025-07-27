@@ -1,11 +1,11 @@
 <?php
-	class Base{
-		private static $siteTitle="";
+	class Base extends UnitBase {
+		
 		private static $siteKeywords="";
 		private static $siteDescription="";
-		private static $pageType="page";
+		
 		public static $data=array();
-		private static $pageName="";
+		
 		private static $isCustomPage=false;
 		private static $hasView=false;
 		
@@ -37,32 +37,7 @@
 			self::$isCustomPage=$isCustomPage;
 		}
 		
-		/**
-		 * @return string
-		 */
-		public static function getPageName(){
-			return self::$pageName;
-		}
 		
-		/**
-		 * @param string $pageName
-		 */
-		public static function setPageName($pageName){
-			self::$pageName=$pageName;
-		}
-		/**
-		 * @return string
-		 */
-		public static function getSiteTitle(){
-			return self::$siteTitle;
-		}
-		
-		/**
-		 * @param string $siteTitle
-		 */
-		public static function setSiteTitle($siteTitle){
-			self::$siteTitle=$siteTitle;
-		}
 		
 		/**
 		 * @return string
@@ -92,36 +67,8 @@
 			self::$siteDescription=$siteDescription;
 		}
 		
-		/**
-		 * @return string
-		 */
-		public static function getPageType(){
-			return self::$pageType;
-		}
 		
-		/**
-		 * @param string $pageType
-		 */
-		public static function setPageType($pageType){
-			self::$pageType=$pageType;
-		}
 		
-		/**
-		 * @param $page_name
-		 * @param $data
-		 * @return void
-		 */
-		public static function setData($page_name,$data){
-			self::$data[$page_name]=$data;
-		}
-		
-		/**
-		 * @param $page_name
-		 * @return mixed
-		 */
-		public static function getData($page_name){
-			return self::$data[$page_name];
-		}
 		
 		/**
 		 * @return mixed
