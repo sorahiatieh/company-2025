@@ -10,9 +10,9 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title><?= Base::getSiteTitle(); ?></title>
-    <meta name="keywords" content="<?= Base::getSiteKeywords(); ?>">
-    <meta name="description" content="<?= Base::getSiteDescription(); ?>">
+    <title><?= SiteBase::getSiteTitle(); ?></title>
+    <meta name="keywords" content="<?= SiteBase::getSiteKeywords(); ?>">
+    <meta name="description" content="<?= SiteBase::getSiteDescription(); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <base href="<?= SITE_URL; ?>">
     <?php
@@ -28,9 +28,9 @@
  
     <div class="content">
         <?php
-            $page_name=Base::getPageName();
+            $page_name=SiteBase::getPageName();
             
-            if(Base::getHasView()){
+            if(SiteBase::getHasView()){
 	            $filename=SECTIONS.$page_name.".view.php";
 	            require $filename;
             }else{

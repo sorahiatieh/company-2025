@@ -1,7 +1,7 @@
 <?php
 	$CP=array();
 	
-	Base::setSiteTitle($setting_db->getSetting('site_title'));
+	SiteBase::setSiteTitle($setting_db->getSetting('site_title'));
 	
 	// اسلایدر
 	require SECTIONS."main/slider.controller.php";
@@ -17,7 +17,7 @@
 	require SECTIONS."main/slogan.controller.php";
 	
 	
-	Base::setData("main",$CP);
+	SiteBase::setData("main",$CP);
 	
 	//Head::addScript("assets/js/jquery.nivo.slider.js");
 	

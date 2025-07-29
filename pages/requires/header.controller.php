@@ -31,13 +31,13 @@
 		
 		
 		$item['Active']=0;
-		if(Base::getPageName()==$item['target'] )
+		if(SiteBase::getPageName()==$item['target'] )
 			$item['Active']=1;
 		
 		$ListOfMenus[$i]=$item;
 	}
 	
-	Base::setData("_menus",$ListOfMenus);
+	SiteBase::setData("_menus",$ListOfMenus);
 	
 	/*echo "<pre>";
 	print_r($ListOfMenus);

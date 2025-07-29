@@ -1,6 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
-    $mydata=Base::getData("show_blog");
+    $mydata=SiteBase::getData("show_blog");
 ?>
 <div class="container content-future">
    <div class="row">

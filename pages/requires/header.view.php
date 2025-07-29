@@ -2,7 +2,7 @@
 	defined("_AST") or die("Access denied");
     $page=new DB_PAGE();
     
-    $ListOfMenu=Base::getData("_menus");
+    $ListOfMenu=SiteBase::getData("_menus");
     ?>
 <div class="top-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

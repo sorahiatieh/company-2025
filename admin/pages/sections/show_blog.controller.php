@@ -19,13 +19,13 @@
 		}
 		
 		
-		Base::setSiteTitle($blogDetails['title']);
-		Base::setSiteKeywords($blogDetails['keywords']);
-		Base::setSiteDescription($blogDetails['description']);
+		SiteBase::setSiteTitle($blogDetails['title']);
+		SiteBase::setSiteKeywords($blogDetails['keywords']);
+		SiteBase::setSiteDescription($blogDetails['description']);
 		
 	
 		$CP['BlogDetails']=$blogDetails;
-		Base::setData("show_blog",$CP);
+		SiteBase::setData("show_blog",$CP);
 	
 	
 	

@@ -1,9 +1,9 @@
 <?php
-	class UnitBase extends Base {
+	class UnitBase  {
 		private static $siteTitle="";
 		private static $pageName="";
 		private static $pageType="page";
-		
+		public static $data=array();
 		
 		
 		/**
@@ -48,20 +48,6 @@
 		 */
 		public static function getData($page_name){
 			return self::$data[$page_name];
-		}
-		
-		/**
-		 * @return string
-		 */
-		public static function getPageType(){
-			return self::$pageType;
-		}
-		
-		/**
-		 * @param string $pageType
-		 */
-		public static function setPageType($pageType){
-			self::$pageType=$pageType;
 		}
 	}
 	

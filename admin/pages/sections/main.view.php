@@ -1,7 +1,7 @@
 <?php
     require SECTIONS."main/slider.view.php";
     
-    $CP=Base::getData("main");
+    $CP=SiteBase::getData("main");
 ?>
 <div class="container">
     <?php

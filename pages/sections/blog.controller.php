@@ -24,7 +24,7 @@
 	}
 	$CP['Items']=$items;
 	
-	Base::setData("blog",$CP);
+	SiteBase::setData("blog",$CP);
 	
 	
 	

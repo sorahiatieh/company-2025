@@ -1,8 +1,8 @@
 <?php
 	defined("_AST") or die("Access denied");
-	$CP=Base::getData("projects");
+	$CP=SiteBase::getData("projects");
     
-    $pageDetails=Base::getPageDetails();
+    $pageDetails=SiteBase::getPageDetails();
 ?>
  <div class="container cont-blog">
      <div class="breadcrumb">

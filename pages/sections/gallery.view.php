@@ -1,6 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
-    $CP=Base::getData("gallery");
+    $CP=SiteBase::getData("gallery");
 ?>
 <div class="container cont-blog">
    <div class="row">

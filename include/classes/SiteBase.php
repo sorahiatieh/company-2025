@@ -1,11 +1,7 @@
 <?php
-	class Base extends UnitBase {
-		
+	class SiteBase extends UnitBase {
 		private static $siteKeywords="";
 		private static $siteDescription="";
-		
-		public static $data=array();
-		
 		private static $isCustomPage=false;
 		private static $hasView=false;
 		
@@ -37,8 +33,6 @@
 			self::$isCustomPage=$isCustomPage;
 		}
 		
-		
-		
 		/**
 		 * @return string
 		 */
@@ -67,18 +61,15 @@
 			self::$siteDescription=$siteDescription;
 		}
 		
-		
-		
-		
 		/**
 		 * @return mixed
 		 */
 		public static function getPageDetails(){
-			return self::$data['_page_details'];
+			return UnitBase::getData(['_page_details']);
 		}
 		
 		public static function setPageDetails($name,$value){
-			self::$data['_page_details'][$name]=$value;
+			UnitBase::setData(['_page_details'][$name],$value);
 		}
 	}
 	

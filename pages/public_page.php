@@ -1,6 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
-    $CP=Base::getPageDetails();
+    $CP=SiteBase::getPageDetails();
 ?>
 <div class="container cont-us">
     <div class="row">

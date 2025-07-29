@@ -19,10 +19,10 @@
 	}
 	
 	
-	Base::setPageDetails("title",count($items)." پروژه آخر");
+	SiteBase::setPageDetails("title",count($items)." پروژه آخر");
 	$CP['Items']=$items;
 	
-	Base::setData("projects",$CP);
+	SiteBase::setData("projects",$CP);
 	
 	
 	/*	echo "<pre>";

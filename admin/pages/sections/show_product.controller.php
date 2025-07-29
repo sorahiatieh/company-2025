@@ -16,8 +16,8 @@
 	if($projectDetails['enable']==0)
 		throw new NotFound();
 			
-	Base::setSiteTitle("پروژه: ".$projectDetails['title']);
-	Base::setSiteKeywords($projectDetails['keywords']);
-	Base::setSiteDescription($projectDetails['description']);
+	SiteBase::setSiteTitle("پروژه: ".$projectDetails['title']);
+	SiteBase::setSiteKeywords($projectDetails['keywords']);
+	SiteBase::setSiteDescription($projectDetails['description']);
 	
 ?>

@@ -1,6 +1,6 @@
 <?php
 	defined("_AST") or die("Access denied");
-	$CP=Base::getData("blog");
+	$CP=SiteBase::getData("blog");
 ?>
 <div class="container cont-us">
     <div class="row">

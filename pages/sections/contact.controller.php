@@ -8,7 +8,7 @@
 	$CP=array();
 	
 	
-	Base::setData("contact",$CP);
+	SiteBase::setData("contact",$CP);
 /*	echo "<pre>";
 	print_r($CP);
 	echo "</pre>";

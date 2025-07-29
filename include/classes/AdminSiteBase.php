@@ -1,5 +1,5 @@
 <?php
-	class AdminBase extends Base {
+	class AdminSiteBase extends SiteBase {
 		private static $subPage="";
 		
 		

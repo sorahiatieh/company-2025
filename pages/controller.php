@@ -2,9 +2,9 @@
 	defined("_AST") or die("Access denied");
 	$setting_db=new DB_SETTING();
 	
-	Base::setSiteTitle($setting_db->getSetting('site_title'));
-	Base::setSiteTitle($setting_db->getSetting('site_keywords'));
-	Base::setSiteTitle($setting_db->getSetting('site_description'));
+	SiteBase::setSiteTitle($setting_db->getSetting('site_title'));
+	SiteBase::setSiteTitle($setting_db->getSetting('site_keywords'));
+	SiteBase::setSiteTitle($setting_db->getSetting('site_description'));
 	
 	
 	Head::addScript("assets/js/jquery-3.0.0.min.js");
@@ -40,34 +40,34 @@
 			throw new NotFound();
 		}
 		
-		Base::setPageName($pagename);
+		SiteBase::setPageName($pagename);
 		
-		Base::setSiteTitle($pageDetails['seo_title']);
-		Base::setSiteKeywords($pageDetails['keywords']);
-		Base::setSiteDescription($pageDetails['description']);
+		SiteBase::setSiteTitle($pageDetails['seo_title']);
+		SiteBase::setSiteKeywords($pageDetails['keywords']);
+		SiteBase::setSiteDescription($pageDetails['description']);
 		
 		//For Public Page
-		Base::setData("_page_details",$pageDetails);
+		SiteBase::setData("_page_details",$pageDetails);
 		
 		if($pageDetails['custom_page']==1){
 			$filename=SECTIONS.$pageDetails['name'].'.controller.php';
 			
 			if(file_exists($filename)){
-				Base::setIsCustomPage(true);
+				SiteBase::setIsCustomPage(true);
 				
 				require $filename;
 			}
 			$filename=SECTIONS.$pageDetails['name'].'.view.php';
-			if(Base::getIsCustomPage() && file_exists($filename)){
-				Base::setHasView(true);
+			if(SiteBase::getIsCustomPage() && file_exists($filename)){
+				SiteBase::setHasView(true);
 			}
 		}
 	}
 	catch(Exception $e){
 		header('HTTP/1.0 404 Not Found');
-		Base::setSiteTitle("یافت نشد!");
-		Base::setHasView(true);
-		Base::setPageName("404");
+		SiteBase::setSiteTitle("یافت نشد!");
+		SiteBase::setHasView(true);
+		SiteBase::setPageName("404");
 	}
 	
 	require "pages/requires/header.controller.php";

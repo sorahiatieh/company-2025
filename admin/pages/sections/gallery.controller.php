@@ -11,7 +11,7 @@
 	Head::addScript("assets/js/jquery.nivo.slider.js");
 	
 	
-	Base::setData("gallery",$CP);
+	SiteBase::setData("gallery",$CP);
  
 	/*echo "<pre>";
 	print_r($CP);
