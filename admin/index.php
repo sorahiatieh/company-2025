@@ -6,6 +6,8 @@
         header("Location: login.php");
         exit;
     }
+    
+    require  "pages/controller.php";
 ?>
 <!doctype html>
 <html lang="fa">
@@ -33,7 +35,11 @@
     </section>
     <section class="col-md-9 content">
         <?php
-            require "pages/require/content.php";
+            $filename=dirname(__FILE__).'/pages/sections/'.AdminBase::getPageName().'/'.AdminBase::getSubPage().'.view.php';
+            
+            if(file_exists($filename)){
+                require $filename;
+            }
         ?>
     </section>
 </div>

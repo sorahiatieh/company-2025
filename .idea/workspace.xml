@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="545ed22f-18c1-46c4-909b-f8ead0e94641" name="Changes" comment="" />
+    <list default="true" id="545ed22f-18c1-46c4-909b-f8ead0e94641" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/include/classes/AdminBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/about.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/blog.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/blog.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/contact.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/contact.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/gallery.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/gallery.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/main.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/main.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/projects.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/projects.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/search.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/search.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_blog.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_blog.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_product.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_product.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_project.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/show_project.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sections/sidebar.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/classes/AdminSiteBase.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +90,7 @@
       <updated>1753602997299</updated>
       <workItem from="1753602998394" duration="1801000" />
       <workItem from="1753631178775" duration="4169000" />
+      <workItem from="1753771851778" duration="5430000" />
     </task>
     <servers />
   </component>
