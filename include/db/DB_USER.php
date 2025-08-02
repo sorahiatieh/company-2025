@@ -5,4 +5,9 @@
 		static function isValidUsername($username) {
 			return Validator::is_az09_($username);
 		}
+		
+		static function hash($password){
+			return md5($password);
+		}
+
 	};

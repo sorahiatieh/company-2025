@@ -2,7 +2,7 @@
 	define("_AST",1);
 	require "../include/inc.php";
 	
-    if(!isset($_SESSION['userLogin'])){
+    if($session->isLogin==false){
         header("Location: login.php");
         exit;
     }
@@ -12,7 +12,7 @@
 <!doctype html>
 <html lang="fa">
 <head>
-    <title>Admin</title>
+    <title><?= AdminBase::getSiteTitle(); ?></title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -26,7 +26,11 @@
 <body>
 <div class="main-body container-fluid">
     <div class="header col-md-12">
-        فلانی به پنل ادمین خوش آمدید.
+        <?php
+        
+        echo $session->userDetails['fname'].$session->userDetails['lname'];
+        
+        ?> به پنل ادمین خوش آمدید.
     </div>
     <section class="col-md-3 sidebar">
         <?php

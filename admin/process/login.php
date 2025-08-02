@@ -21,7 +21,7 @@
 			throw $respons;
 		}
 		$user_db=new DB_USER();
-		if(User::isValidUsername($username)){
+		if(!DB_USER::isValidUsername($username)){
 			$respons->Text="نام کاربری یا رمز عبور صحیح نمی باشد!";
 			throw $respons;
 		}
@@ -34,7 +34,7 @@
 			throw $respons;
 		}
 		// پسورد رو خارج از دیتابیس چک میکنیم
-		$password=md5($password);
+		$password=DB_USER::hash($password);
 		
 		if($UserDetails['password']!=$password){
 			$respons->Text="نام کاربری یا رمز عبور صحیح نمیباشد!";
@@ -45,6 +45,10 @@
 			$respons->Text="حساب کاربری شما توسط مدیریت غیرفعال شده است!";
 			throw $respons;
 		}
+		
+	
+		$_SESSION['userID']=$UserDetails['id'];
+		
 		
 		$respons->Status=1;
 		$respons->Text="اطلاعات تایید شد.\n بزودی به ناحیه کاربری منتقل خواهید شد.";

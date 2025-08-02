@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".sidebar .main-menu>li>a").onclick(function (e){
+	$(".sidebar .main-menu>li>a[href='#']").onclick(function (e){
 		e.preventDefault();
 
 		$(".sidebar .main-menu li").classList.remove("active");

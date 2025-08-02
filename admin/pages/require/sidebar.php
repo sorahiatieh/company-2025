@@ -1,3 +1,9 @@
+
+<div class="text-center">
+    اعتبار شما: <?= number_format($session->userDetails['credit'].' تومان');
+	?>
+</div>
+
 <ul class="main-menu list-unstyled">
     <li class="active"><a href="index.php">داشبورد</a></li>
     <li><a href="#">مدیریت مطالب</a>
