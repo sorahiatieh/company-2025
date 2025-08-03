@@ -4,37 +4,68 @@
 		public $userName="";
 		public $userId=0;
 		public $userDetails=array();
-		
+		private $sessionName="userId";
+		private $password="";
+	
 		function __construct(){
-			if(isset($_SESSION['userId'])){
-				$this->userId=$_SESSION['userId'];
+			$this->checkLogin();
+		}
+		
+		/**
+		 * @return void
+		 */
+		function checkLogin(){
+			if(isset(
+				$_SESSION[$this->sessionName],
+				$_SESSION['password']
+			)){
+				$this->userId=$_SESSION[$this->sessionName];
 				
 				$user_db=new DB_USER();
 				$UserDetails=$user_db->setWheres(array(
-					"id"=>$this->userId
+					"id"=>$this->userId,
+					"enable"=>1
 				))->getDetails()->run();
 				
 				if(!empty($UserDetails)){
-					$this->isLogin=true;
-					$this->userName=$UserDetails['username'];
-					$this->userDetails=$UserDetails;
+					if($UserDetails['password']!=$_SESSION['password']){
+						$this->isLogin=false;
+					}else{
+						$this->isLogin=true;
+						$this->userName=$UserDetails['username'];
+						$this->userDetails=$UserDetails;
+					}
 				}
+			}else{
+				$this->isLogin=false;
 			}
-		}
 		
+		}
 		/**
 		 * @param $user_id
 		 * @return void
 		 */
 		function userLogin($user_id){
-			$_SESSION['userId']=$user_id;
+			$user_db=new DB_USER();
+			$UserDetails=$user_db->setWheres(array(
+				"id"=>$this->userId,
+				"enable"=>1
+			))->setReturnFields(array(
+				"password"
+			))->getDetails()->run();
+			
+			$_SESSION[$this->sessionName]=$user_id;
+			$_SESSION['password']=$UserDetails['password'];
+			
+			$this->checkLogin();
 		}
 		
 		/**
 		 * @return void
 		 */
 		function userLogout(){
-			unset($_SESSION['userId']);
+			unset($_SESSION[$this->sessionName]);
+			$this->checkLogin();
 		}
 	}
 	?>

@@ -2,7 +2,7 @@
 	define("_AST",1);
     require "../include/inc.php";
     
-    if(isset($_SESSION['userLogin'])){
+    if($session->isLogin){
         header("location:index.php");
         exit;
     }
