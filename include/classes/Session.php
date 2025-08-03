@@ -8,6 +8,8 @@
 		private $password="";
 	
 		function __construct(){
+			/*var_dump($_SESSION);
+			exit;*/
 			$this->checkLogin();
 		}
 		
@@ -28,9 +30,7 @@
 				))->getDetails()->run();
 				
 				if(!empty($UserDetails)){
-					if($UserDetails['password']!=$_SESSION['password']){
-						$this->isLogin=false;
-					}else{
+					if($UserDetails['password']==$_SESSION['password']){
 						$this->isLogin=true;
 						$this->userName=$UserDetails['username'];
 						$this->userDetails=$UserDetails;
@@ -48,7 +48,7 @@
 		function userLogin($user_id){
 			$user_db=new DB_USER();
 			$UserDetails=$user_db->setWheres(array(
-				"id"=>$this->userId,
+				"id"=>$this->$user_id,
 				"enable"=>1
 			))->setReturnFields(array(
 				"password"
@@ -66,6 +66,10 @@
 		function userLogout(){
 			unset($_SESSION[$this->sessionName]);
 			$this->checkLogin();
+		}
+		
+		function setPassword($password){
+			$_SESSION['password']=DB_USER::hash($password);
 		}
 	}
 	?>
