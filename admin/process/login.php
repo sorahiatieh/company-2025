@@ -47,7 +47,7 @@
 		}
 		
 	
-		$_SESSION['userID']=$UserDetails['id'];
+		$session->userLogin($UserDetails['id']);
 		
 		
 		$respons->Status=1;

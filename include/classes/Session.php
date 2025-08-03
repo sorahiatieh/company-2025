@@ -2,16 +2,16 @@
 	class Session {
 		public $isLogin=false;
 		public $userName="";
-		public $userID=0;
+		public $userId=0;
 		public $userDetails=array();
 		
 		function __construct(){
-			if(isset($_SESSION['userID'])){
-				$this->userID=$_SESSION['userID'];
+			if(isset($_SESSION['userId'])){
+				$this->userId=$_SESSION['userId'];
 				
 				$user_db=new DB_USER();
 				$UserDetails=$user_db->setWheres(array(
-					"id"=>$this->userID
+					"id"=>$this->userId
 				))->getDetails()->run();
 				
 				if(!empty($UserDetails)){
@@ -20,6 +20,21 @@
 					$this->userDetails=$UserDetails;
 				}
 			}
+		}
+		
+		/**
+		 * @param $user_id
+		 * @return void
+		 */
+		function userLogin($user_id){
+			$_SESSION['userId']=$user_id;
+		}
+		
+		/**
+		 * @return void
+		 */
+		function userLogout(){
+			unset($_SESSION['userId']);
 		}
 	}
 	?>
