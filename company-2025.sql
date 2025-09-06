@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 20, 2025 at 07:23 AM
--- Server version: 8.2.0
--- PHP Version: 8.2.13
+-- Generation Time: Sep 06, 2025 at 02:50 PM
+-- Server version: 9.1.0
+-- PHP Version: 8.3.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -76,6 +76,38 @@ INSERT INTO `tbl_contacts` (`id`, `fullname`, `phone`, `email`, `text`, `date`, 
 (2, 'ali', '02176223549', 'aliagha@gmail.com', 'test', 1744562991, '127.0.0.1'),
 (3, 'mina', '09120234153', 'minabala@yahoo.com', 'this is test', 1744563099, '::1'),
 (4, 'mina', '09120234153', 'minabala@yahoo.com', 'this is test', 1744563597, '::1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_menus`
+--
+
+DROP TABLE IF EXISTS `tbl_menus`;
+CREATE TABLE IF NOT EXISTS `tbl_menus` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `parent_id` int NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `target_type` enum('Internal','External') CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `target` varchar(100) NOT NULL,
+  `new_window` tinyint(1) NOT NULL,
+  `custom_url` varchar(100) NOT NULL,
+  `sort` int NOT NULL,
+  `enable` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `tbl_menus`
+--
+
+INSERT INTO `tbl_menus` (`id`, `parent_id`, `title`, `target_type`, `target`, `new_window`, `custom_url`, `sort`, `enable`) VALUES
+(1, 0, 'خانه', 'External', 'main', 0, '0', 1, 1),
+(2, 0, 'بلاگ', 'External', 'blog/', 0, '0', 2, 1),
+(3, 0, 'گالری تصاویر', 'Internal', 'gallery', 0, '0', 3, 1),
+(4, 0, 'پروژه ها', 'Internal', 'projects/', 0, '0', 4, 1),
+(5, 0, 'درباره ما', 'Internal', 'about', 0, '0', 5, 1),
+(6, 0, 'تماس با ما', 'Internal', 'contact', 0, '0', 6, 1);
 
 -- --------------------------------------------------------
 
